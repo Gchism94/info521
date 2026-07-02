@@ -1,0 +1,50 @@
+---
+title: "Machine Learning Foundations"
+page-layout: full
+---
+
+## Course Overview
+
+INFO 521 is a 7.5-week graduate course covering the foundations of machine learning, from classical linear regression through neural networks. Taught by **Greg Chism**, this course emphasizes both theoretical understanding and practical application, combining interactive peer-engagement loops with projects that integrate the full learning arc.
+
+:::{.grid}
+
+:::{.g-col-12 .g-col-md-4}
+### Slides
+
+Lecture decks in reveal.js with dark/light toggle and PDF export. Topics span foundations, learning theory, Bayesian methods, model selection, and neural networks.
+
+[Browse Slides →](slides.qmd)
+:::
+
+:::{.g-col-12 .g-col-md-4}
+### Activities
+
+Six weekly peer-engagement loops: interactive tool + mastery quiz → reflection → peer review → revise. Each tool is a self-contained visualization with a retakeable quiz.
+
+[Explore Activities →](activities.qmd)
+:::
+
+:::{.g-col-12 .g-col-md-4}
+### Assessment
+
+Projects (55%), Homeworks (30%), Checkpoints (9%), Peer engagement (5%), Prerequisite quiz (1%). Two integrative projects replace traditional exams.
+
+[See Grading Scheme →](assessment.qmd)
+:::
+
+:::
+
+## Schedule
+
+The course follows a **module-by-module schedule**, each pairing slides with hands-on activities. Review the full schedule and see what's in progress:
+
+[Module Schedule →](schedule.qmd)
+
+---
+
+## Key Resources
+
+- **Homeworks**: Practice problems deployed via [GitHub Classroom]({{< var classroom_url >}})
+- **Projects**: Clinical dataset carries the semester arc across two projects
+- **Checkpoints**: Retakeable assessments covering key concepts
