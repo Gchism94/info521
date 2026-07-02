@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "INFO 521 — Machine Learning Foundations"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: schedule.qmd
+        text: Schedule
+      - href: slides.qmd
+        text: Slides
+      - href: activities.qmd
+        text: Activities
+      - href: assessment.qmd
+        text: Assessment
+    right:
+      - icon: github
+        href: "{{< var hub_repo_url >}}"
+        aria-label: "GitHub"
+  page-footer:
+    left: |
+      © 2026 University of Arizona School of Information
+    right: |
+      Built with [Quarto](https://quarto.org/)
+
+format:
+  html:
+    theme: [cosmo, theme.scss]
+    toc: true
+    page-footer:
+      left: |
+        © 2026 University of Arizona School of Information

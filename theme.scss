@@ -1,0 +1,55 @@
+/*-- scss:defaults --*/
+// INFO 521 Hub Theme — University of Arizona Branding
+
+// UA Colors
+$ua-navy:  #1B4F72;
+$ua-red:   #AB0520;
+
+// Light background (cosmo default)
+$light-bg: #f5f5f5;
+
+// Dark background for emphasis
+$dark-bg:  #2c2c2a;
+
+// Customize cosmo theme colors
+$primary:       $ua-navy;
+$secondary:     $ua-red;
+$link-color:    $ua-navy;
+$link-hover:    $ua-red;
+$border-color:  darken($light-bg, 15%);
+
+// Body
+$body-bg:       $light-bg;
+$body-color:    #2c2c2a;
+
+// Headings
+$headings-color: $ua-navy;
+$h1-font-size:  2.2rem;
+$h2-font-size:  1.8rem;
+$h3-font-size:  1.4rem;
+
+/*-- scss:rules --*/
+// Minimal overrides to emphasize UA branding
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: 2px solid $ua-red;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.6em;
+}
+
+a {
+  color: $ua-navy;
+  text-decoration: none;
+
+  &:hover {
+    color: $ua-red;
+  }
+}
+
+.navbar {
+  background-color: $ua-navy !important;
+
+  .navbar-brand {
+    color: white !important;
+    font-weight: 600;
+  }
+}
