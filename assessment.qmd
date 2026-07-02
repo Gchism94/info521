@@ -1,0 +1,85 @@
+---
+title: "Assessment & Grading"
+page-layout: full
+---
+
+## Grading Scheme (Scheme B: Specifications Grading)
+
+| Component | Weight |
+|-----------|--------|
+| **Projects (2)** | 55% |
+| **Homeworks** | 30% |
+| **Checkpoints (3)** | 9% |
+| **Peer-Engagement Loops** | 5% |
+| **Prerequisite Quiz** | 1% |
+
+**Specifications Grading**: Work is evaluated on a **pass/revise** basis rather than point accumulation. Each assessment bundle (projects, homeworks, checkpoints) has a defined specification; work meeting the spec earns the weighted points. Work not meeting the spec may be revised and resubmitted within a grace period.
+
+---
+
+## Projects (55% of grade)
+
+Two integrative projects replace traditional midterm and final exams. Each project synthesizes multiple weeks of the course arc.
+
+### Project 1: "One Problem, Three Lenses"
+*Due Week 5 (TODO — calendar TBD)*
+
+Use a single regression problem with a clinical dataset. Solve it three ways:
+- **Least Squares**: classical normal equations and interpretation
+- **Maximum Likelihood Estimation**: Gaussian model, negative log-likelihood
+- **Bayesian**: posterior inference and credible intervals
+
+Synthesis question: How do the three approaches diverge and converge? What assumptions differ?
+
+### Project 2: "From Inference to Discovery"
+*Due Week 7 (TODO — calendar TBD)*
+
+Same dataset, now tasked with discovering structure:
+- **Approximate Inference**: variational inference or sampling
+- **Discriminative Classification**: logistic regression or SVM
+- **Unsupervised Learning**: k-means clustering + PCA for dimensionality reduction
+
+Synthesis question: What story does the data tell when you stop presuming its structure?
+
+**Submission**: GitHub Classroom. See [GitHub Classroom]({{< var classroom_url >}}) for the invite link.
+
+---
+
+## Homeworks (30% of grade)
+
+Short problem sets (1–2 per week) emphasizing computation and interpretation. Deployed via **GitHub Classroom** — all submissions must be pushed to your private repo. Homeworks are practice-graded on a pass/revise basis; three passes earn full homework credit.
+
+The [Homeworks repository]({{< var homeworks_repo >}}) contains specifications and autograder fixtures. No solution content is visible here; only you and Greg can see your repo.
+
+---
+
+## Checkpoints (9% of grade)
+
+Three retakeable in-class assessments (Weeks 2, 4, 6) covering:
+- **Checkpoint 1 (Week 2)**: Linear regression, bias–variance, regularization
+- **Checkpoint 2 (Week 4)**: Classification, likelihood, Bayesian inference
+- **Checkpoint 3 (Week 6)**: Unsupervised learning, dimensionality reduction
+
+Each checkpoint is offered twice (original + retake within 1 week). You keep your best score. Passing all three checkpoints earns the 9% weighting.
+
+**Dates**: Scheduled during class time. TODO — calendar pending.
+
+---
+
+## Peer-Engagement Loops (5% of grade)
+
+Six weekly loops (Weeks 1–6): complete the interactive tool, generate your token, post to D2L, review peers, integrate feedback. Completing all six loops earns 5%.
+
+See [Activities](activities.qmd) for loop details.
+
+---
+
+## Prerequisite Quiz (1% of grade)
+
+A brief assessment (administered Week 1) on linear algebra and probability fundamentals. Pass = 1% credit. It's primarily diagnostic; most students pass.
+
+---
+
+## Revision & Grace Policies
+
+All work (projects, homeworks, checkpoints) can be revised. You have **3 days after feedback** to resubmit with revisions. The goal is mastery, not perfection on first attempt.
