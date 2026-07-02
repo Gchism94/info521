@@ -1,0 +1,46 @@
+---
+title: "Activities & Peer-Engagement Loops"
+page-layout: full
+---
+
+## The Peer-Engagement Loop Model
+
+Instead of worksheets and traditional quizzes, INFO 521 uses a four-stage **peer-engagement loop** each week:
+
+1. **Interactive Tool + Mastery Quiz** — An interactive D3 visualization paired with a retakeable, randomized quiz. Reaching ≥80% reveals a **completion token** (honor-evidence, not cryptographically signed).
+
+2. **Reflection Post** — Paste your token into a D2L discussion and reflect on what you learned, what surprised you, or what confused you.
+
+3. **Peer Review** — Review three classmates' reflections using a 3-part rubric: clarity, insight, and integration.
+
+4. **Respond & Revise** — Integrate peer feedback into a revised reflection.
+
+The completion token is **honor-verified**: each week's token changes, and an audit list helps flag anomalies. The loop replaces worksheets, emphasizes self-paced mastery, and builds collaborative learning into the grade.
+
+---
+
+## Weekly Tools (Weeks 1–6)
+
+All tools are **buildless static HTML** — open them directly in your browser, take the quiz multiple times, and generate your completion token.
+
+| Week | Tool | Description |
+|------|------|-------------|
+| 1 | [Least Squares]({{< var activities_url >}}/week01-least-squares/) | Interactive least-squares regression: adjust data and weights to minimize loss. Quiz covers fitting, residuals, and normal equations. |
+| 2 | [Bias–Variance]({{< var activities_url >}}/week02-bias-variance/) | Visualize the bias–variance trade-off across polynomial degrees and noise levels. Quiz on regularization and model complexity. |
+| 3 | [Bayesian Updating]({{< var activities_url >}}/week03-bayesian-updating/) | Update a posterior belief as data arrives. Quiz on priors, likelihoods, conjugacy, and credible intervals. |
+| 4 | [Logistic Regression]({{< var activities_url >}}/week04-logistic-regression/) | Classify with the logistic function; adjust decision boundary. Quiz on sigmoid, MLE, and probabilistic classification. |
+| 5 | [k-means Clustering]({{< var activities_url >}}/week05-kmeans/) | Initialize and run k-means on 2D data. Quiz on centroid assignment, convergence, and cluster validity. |
+| 6 | [Principal Component Analysis]({{< var activities_url >}}/week06-pca/) | Rotate to principal components and visualize variance explained. Quiz on eigendecomposition and dimensionality reduction. |
+
+**Week 7 (Neural Networks)** has no loop — the focus shifts to the final project.
+
+---
+
+## Accessibility & Theme
+
+All tools feature:
+- **Dark/light theme toggle** matching the slide decks (UA brand colors)
+- **Keyboard-operable controls** with visible focus
+- **Okabe-Ito color palette** with redundant non-color cues (line style, marker shape) for colorblind users
+- **Reduced motion** support (`prefers-reduced-motion: reduce`)
+- **Mathematical notation** via KaTeX 0.16.9 (identical to slides)
