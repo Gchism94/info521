@@ -1,0 +1,29 @@
+---
+title: "Module Schedule"
+page-layout: full
+---
+
+## Course Modules (7.5 Weeks)
+
+The schedule below maps each module to its slides, activity loop, and assessment. Slides marked "In progress" are not yet published; checkpoint dates and project deadlines are marked TODO pending final calendar confirmation.
+
+| Week | Topic | Slides | Activity Loop | Readings | Assessment |
+|------|-------|--------|--------------|----------|------------|
+| 1 | **Foundations & Linear Regression** | [Module 1 (In progress)]({{< var slides_url >}}) | [week01-least-squares]({{< var activities_url >}}/week01-least-squares/) | Murphy: Ch. 1–2; Prince: §2.1 | — |
+| 2 | **Learning Theory: Bias–Variance & Regularization** | [Module 2 (In progress)]({{< var slides_url >}}) | [week02-bias-variance]({{< var activities_url >}}/week02-bias-variance/) | Murphy: Ch. 5; James et al. § 6.1 | Checkpoint 1 (TODO) |
+| 3 | **Probability & Bayesian Learning** | [Module 3]({{< var slides_url >}}/modules/m3-mle-uncertainty/) | [week03-bayesian-updating]({{< var activities_url >}}/week03-bayesian-updating/) | Murphy: Ch. 3–4; Think Bayes: Ch. 2–3 | — |
+| 4 | **Discriminative vs. Generative Models** | [Module 4 (In progress)]({{< var slides_url >}}) | [week04-logistic-regression]({{< var activities_url >}}/week04-logistic-regression/) | Murphy: Ch. 7; Prince: Ch. 5 | Checkpoint 2 (TODO) |
+| 5 | **Model Selection & Clustering** | [Module 5 (In progress)]({{< var slides_url >}}) | [week05-kmeans]({{< var activities_url >}}/week05-kmeans/) | Murphy: Ch. 8; Prince: Ch. 12 | **Project 1 Due (TODO)** |
+| 6 | **Dimensionality Reduction (PCA)** | [Module 6 (In progress)]({{< var slides_url >}}) | [week06-pca]({{< var activities_url >}}/week06-pca/) | Murphy: Ch. 20; Prince: Ch. 11 | Checkpoint 3 (TODO) |
+| 7 | **Neural Networks** | [Module 7 (In progress)]({{< var slides_url >}}) | — | MML: Ch. 5; Goodfellow et al. Ch. 6 | **Project 2 Due (TODO)** |
+
+---
+
+## Legend
+
+- **Slides**: Links to live reveal.js decks (dark/light toggle, PDF export via browser).
+- **Activity Loop**: Interactive tool + retakeable mastery quiz → reflection → peer review → revise (completion tokens honor-verified).
+- **Readings**: Primary texts; specific chapters/sections to be refined.
+- **Assessment**: Checkpoint sittings and project deadlines (calendar TBD).
+
+All external links open in a new tab.
