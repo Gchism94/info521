@@ -1,0 +1,44 @@
+---
+title: "Lecture Slides"
+page-layout: full
+---
+
+## Slide Decks by Module
+
+All slides are built with **Quarto + reveal.js** and rendered to portable, self-contained HTML suitable for D2L upload or direct browsing. Each deck includes:
+
+- **Dark/light theme toggle** (click the button, lower-left corner)
+- **Speaker notes** (press `s` during playback)
+- **PDF export** (press `p` for print dialog, then "Save as PDF")
+- **Keyboard navigation** (arrow keys, spacebar; `?` for help)
+
+| Module | Topic | Status | Link |
+|--------|-------|--------|------|
+| 1 | **Foundations & Linear Regression** | In progress | — |
+| 2 | **Learning Theory: Bias–Variance & Regularization** | In progress | — |
+| 3 | **Probability & Bayesian Learning** | Ready | [View Slide Deck]({{< var slides_url >}}/modules/m3-mle-uncertainty/) |
+| 4 | **Discriminative vs. Generative Models** | In progress | — |
+| 5 | **Model Selection & Clustering** | In progress | — |
+| 6 | **Dimensionality Reduction (PCA)** | In progress | — |
+| 7 | **Neural Networks** | In progress | — |
+
+---
+
+## Build & Rendering
+
+Slides are rendered locally with:
+```bash
+./render.sh          # Bootstrap Python 3.11 venv + render all to docs/ (HTML + PDF)
+./render.sh html     # HTML only
+./render.sh pdf      # PDF only
+```
+
+- **Python 3.11–3.13** required (numpy 2.1.x wheels not available for Python 3.14+)
+- Output lands in `docs/` (tracked, GitHub Pages convention)
+- Self-contained HTML files inline CSS, JS, and figures; KaTeX loaded from CDN (identical version pinned across all decks and activities)
+
+---
+
+## Branding & Notation
+
+All decks use the **University of Arizona color scheme** (Navy #1B4F72, Red #AB0520) and the **Okabe-Ito colorblind-safe palette** for data visualization. Mathematical notation follows **Murphy (PML)** conventions for consistency across the course.
