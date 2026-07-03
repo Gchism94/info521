@@ -1,0 +1,9 @@
+---
+title: "Unit 3 — Monte Carlo & Estimators"
+subtitle: "Analytic vs Monte-Carlo expectations · estimating π in 2-D/3-D/n-D · the curse of dimensionality"
+page-layout: full
+---
+
+{{< include _unit3-body.qmd >}}
+
+{{< include _unit3-rubric.qmd >}}

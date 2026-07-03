@@ -1,0 +1,9 @@
+---
+title: "Unit 1 — Linear Models & Model Selection"
+subtitle: "One dataset, three fits: scalar least squares → matrix normal equations → cross-validated polynomial"
+page-layout: full
+---
+
+{{< include _unit1-body.qmd >}}
+
+{{< include _unit1-rubric.qmd >}}

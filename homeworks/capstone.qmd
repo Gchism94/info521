@@ -1,0 +1,9 @@
+---
+title: "Capstone — Open Bayesian Modelling with Uncertainty"
+subtitle: "Choose a model · fit it · quantify uncertainty · report results + ethics"
+page-layout: full
+---
+
+{{< include _capstone-body.qmd >}}
+
+{{< include _capstone-rubric.qmd >}}

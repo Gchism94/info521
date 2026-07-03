@@ -1,0 +1,9 @@
+---
+title: "Unit 2b — Probability & Estimation Foundations (II)"
+subtitle: "Matrix calculus (Jacobian identities) · Gaussian independence · MLE unbiasedness · Beta moments"
+page-layout: full
+---
+
+{{< include _unit2b-body.qmd >}}
+
+{{< include _unit2b-rubric.qmd >}}

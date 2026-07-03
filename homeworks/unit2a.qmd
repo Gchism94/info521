@@ -1,0 +1,9 @@
+---
+title: "Unit 2a — Probability & Estimation Foundations (I)"
+subtitle: "Poisson probabilities · Bernoulli MLE · Fisher information"
+page-layout: full
+---
+
+{{< include _unit2a-body.qmd >}}
+
+{{< include _unit2a-rubric.qmd >}}

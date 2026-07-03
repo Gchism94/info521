@@ -1,0 +1,9 @@
+---
+title: "Unit 4 — Bayesian Inference, Exact & Conjugate"
+subtitle: "Predictive variance · the exact coin-game posterior (Beta–Binomial) · Inverse-Gamma conjugacy"
+page-layout: full
+---
+
+{{< include _unit4-body.qmd >}}
+
+{{< include _unit4-rubric.qmd >}}

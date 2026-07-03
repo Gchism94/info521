@@ -1,0 +1,9 @@
+---
+title: "Unit 5 — Approximate Bayesian Inference"
+subtitle: "Four ways to one posterior: graphical model · MAP (Newton) · Laplace · MCMC"
+page-layout: full
+---
+
+{{< include _unit5-body.qmd >}}
+
+{{< include _unit5-rubric.qmd >}}

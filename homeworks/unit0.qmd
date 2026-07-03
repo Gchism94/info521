@@ -1,0 +1,9 @@
+---
+title: "Unit 0 — Tooling & Reproducibility"
+subtitle: "GitHub Classroom · pytest · the SOLUTION-marker workflow · the seed policy"
+page-layout: full
+---
+
+{{< include _unit0-body.qmd >}}
+
+{{< include _unit0-rubric.qmd >}}
