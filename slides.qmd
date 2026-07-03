@@ -7,20 +7,22 @@ page-layout: full
 
 All slides are built with **Quarto + reveal.js** and rendered to portable, self-contained HTML suitable for D2L upload or direct browsing. Each deck includes:
 
-- **Dark/light theme toggle** (click the button, lower-left corner)
+- **Dark/light theme toggle** (click the button, top-right corner)
 - **Speaker notes** (press `s` during playback)
-- **PDF export** (press `p` for print dialog, then "Save as PDF")
+- **PDF** (a rendered `.pdf` ships alongside each deck; or open the deck with `?print-pdf` appended to the URL and print from the browser)
 - **Keyboard navigation** (arrow keys, spacebar; `?` for help)
 
-| Module | Topic | Status | Link |
-|--------|-------|--------|------|
-| 1 | **Foundations & Linear Regression** | In progress | — |
-| 2 | **Learning Theory: Bias–Variance & Regularization** | In progress | — |
-| 3 | **Probability & Bayesian Learning** | Ready | [View Slide Deck]({{< var slides_url >}}/modules/m3-mle-uncertainty/) |
-| 4 | **Discriminative vs. Generative Models** | In progress | — |
-| 5 | **Model Selection & Clustering** | In progress | — |
-| 6 | **Dimensionality Reduction (PCA)** | In progress | — |
-| 7 | **Neural Networks** | In progress | — |
+| Module | Topic | Status | Decks |
+|--------|-------|--------|-------|
+| 1 | **Linear Models & Least Squares** | Ready | [Setup & Model]({{< var slides_url >}}/modules/m1-linear-least-squares/m1a-setup-and-model.html) · [Normal Equations]({{< var slides_url >}}/modules/m1-linear-least-squares/m1b-normal-equations.html) · [Appendix: Matrix Calculus]({{< var slides_url >}}/modules/m1-linear-least-squares/appendix-matrix-calculus.html) |
+| 2 | **Generalization** | Ready | [Evaluation & Cross-Validation]({{< var slides_url >}}/modules/m2-generalization/m2a-evaluation-cv.html) · [Bias–Variance & Ridge]({{< var slides_url >}}/modules/m2-generalization/m2b-bias-variance-ridge.html) |
+| 3 | **MLE & Parameter Uncertainty** | Lecture B ready · Lecture A forthcoming | [Properties of the MLE]({{< var slides_url >}}/modules/m3-mle-uncertainty/m3b-mle-uncertainty.html) · [Appendix: Covariance]({{< var slides_url >}}/modules/m3-mle-uncertainty/appendix-covariance.html) |
+| 4 | **Bayesian Inference** | In progress | — |
+| 5 | **Approximate Inference & Bayesian Classification** | In progress | — |
+| 6 | **SVM & Clustering** | In progress | — |
+| 7 | **PCA** | In progress | — |
+
+Each module also has a landing page listing its decks: [M1]({{< var slides_url >}}/modules/m1-linear-least-squares/) · [M2]({{< var slides_url >}}/modules/m2-generalization/) · [M3]({{< var slides_url >}}/modules/m3-mle-uncertainty/).
 
 ---
 
