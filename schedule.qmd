@@ -5,17 +5,17 @@ page-layout: full
 
 ## Course Modules (7.5 Weeks)
 
-The schedule below maps each module to its slides, activity loop, and assessment. Slides marked "In progress" are not yet published; checkpoint dates and project deadlines are marked TODO pending final calendar confirmation.
+The schedule below maps each module to its slides, activity loop, and assessment. All seven modules' slide decks are published; checkpoint dates and project deadlines are marked TODO pending final calendar confirmation.
 
 | Week | Topic | Slides | Activity Loop | Readings | Assessment |
 |------|-------|--------|--------------|----------|------------|
 | 1 | **Linear Models & Least Squares** | [Module 1]({{< var slides_url >}}/modules/m1-linear-least-squares/) | [week01-least-squares]({{< var activities_url >}}/week01-least-squares/) | Murphy: Ch. 1–2; Prince: §2.1 | — |
 | 2 | **Generalization** | [Module 2]({{< var slides_url >}}/modules/m2-generalization/) | [week02-bias-variance]({{< var activities_url >}}/week02-bias-variance/) | Murphy: Ch. 5; James et al. § 6.1 | Checkpoint 1 (TODO) |
 | 3 | **MLE & Parameter Uncertainty** | [Module 3]({{< var slides_url >}}/modules/m3-mle-uncertainty/) | — | Murphy: Ch. 3–4 | — |
-| 4 | **Bayesian Inference** | [Module 4 (In progress)]({{< var slides_url >}}) | [week03-bayesian-updating]({{< var activities_url >}}/week03-bayesian-updating/) | Think Bayes: Ch. 2–3 | Checkpoint 2 (TODO) |
-| 5 | **Approximate Inference & Bayesian Classification** | [Module 5 (In progress)]({{< var slides_url >}}) | [week04-logistic-regression]({{< var activities_url >}}/week04-logistic-regression/) | TBD | **Project 1 Due (TODO)** |
-| 6 | **SVM & Clustering** | [Module 6 (In progress)]({{< var slides_url >}}) | [week05-kmeans]({{< var activities_url >}}/week05-kmeans/) | Murphy: Ch. 8; Prince: Ch. 12 | Checkpoint 3 (TODO) |
-| 7 | **PCA** | [Module 7 (In progress)]({{< var slides_url >}}) | [week06-pca]({{< var activities_url >}}/week06-pca/) | Murphy: Ch. 20; Prince: Ch. 11 | **Project 2 Due (TODO)** |
+| 4 | **Bayesian Inference** | [Module 4]({{< var slides_url >}}/modules/m4-bayesian-inference/) | [week03-bayesian-updating]({{< var activities_url >}}/week03-bayesian-updating/) | Think Bayes: Ch. 2–3 | Checkpoint 2 (TODO) |
+| 5 | **Approximate Inference & Bayesian Classification** | [Module 5]({{< var slides_url >}}/modules/m5-approximate-inference/) | [week04-logistic-regression]({{< var activities_url >}}/week04-logistic-regression/) | TBD | **Project 1 Due (TODO)** |
+| 6 | **SVM & Clustering** | [Module 6]({{< var slides_url >}}/modules/m6-svm-clustering/) | [week05-kmeans]({{< var activities_url >}}/week05-kmeans/) | Murphy: Ch. 8; Prince: Ch. 12 | Checkpoint 3 (TODO) |
+| 7 | **PCA** | [Module 7]({{< var slides_url >}}/modules/m7-pca/) | [week06-pca]({{< var activities_url >}}/week06-pca/) | Murphy: Ch. 20; Prince: Ch. 11 | **Project 2 Due (TODO)** |
 
 *(Activity slugs are week-named and land one week after their module opens from Module 4 on — modules ≠ weeks. Module 3 has no activity; a parameter-uncertainty tool is a future build.)*
 
