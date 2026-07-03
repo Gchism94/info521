@@ -49,7 +49,11 @@ Synthesis question: What story does the data tell when you stop presuming its st
 
 Short problem sets (1–2 per week) emphasizing computation and interpretation. Deployed via **GitHub Classroom** — all submissions must be pushed to your private repo. Homeworks are practice-graded on a pass/revise basis; three passes earn full homework credit.
 
-The [Homeworks repository]({{< var homeworks_repo >}}) contains specifications and autograder fixtures. No solution content is visible here; only you and Greg can see your repo.
+Unit-by-unit descriptions, objectives, and the homework grading policy are on the
+[homeworks site]({{< var homeworks_url >}}) (also linked from [Homeworks](homeworks.qmd) in
+the navbar). The [source repository]({{< var homeworks_repo >}}) containing specifications
+and autograder fixtures is private; no solution content is visible — only you and Greg can
+see your submission repo.
 
 ---
 

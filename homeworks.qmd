@@ -1,0 +1,32 @@
+---
+title: "Homeworks"
+page-layout: full
+---
+
+## Specifications-Graded Units
+
+The homework sequence is **8 deliverables** — seven units plus an open **Capstone** —
+consolidated into connected arcs rather than isolated weekly problem sets. Every deliverable
+is graded **pass / not-yet** against published specifications (no points, no partial credit,
+revise-and-resubmit), and each unit page states its objectives, prerequisites, cross-unit
+connections, and what to submit.
+
+**Browse the units on the [homeworks site]({{< var homeworks_url >}})**, including the
+[full grading policy]({{< var homeworks_url >}}/grading.html) (bundles, revise budget, and
+the letter-grade ladder).
+
+| Unit | Title | You'll build |
+|:----:|-------|--------------|
+| [U0]({{< var homeworks_url >}}/units/unit0.html) | Tooling & Reproducibility | A working pipeline (clone → `pytest` → render → push) and the seed policy every later unit assumes. |
+| [U1]({{< var homeworks_url >}}/units/unit1.html) | Linear Models & Model Selection | One dataset, three fits: scalar least squares → matrix normal equations → cross-validated polynomial. |
+| [U2a]({{< var homeworks_url >}}/units/unit2a.html) | Probability & Estimation Foundations (I) | Poisson probabilities + derivations: the Bernoulli MLE and its Fisher-information floor. |
+| [U2b]({{< var homeworks_url >}}/units/unit2b.html) | Probability & Estimation Foundations (II) | Written-only: the matrix-calculus identities Unit 1 applied, Gaussian independence, MLE unbiasedness, Beta moments. |
+| [U3]({{< var homeworks_url >}}/units/unit3.html) | Monte Carlo & Estimators | Estimating 𝔼[f(X)] and π by sampling; O(1/√N) convergence and the curse of dimensionality. |
+| [U4]({{< var homeworks_url >}}/units/unit4.html) | Bayesian Inference, Exact & Conjugate | Predictive-variance error bars, the exact coin-game posterior, Inverse-Gamma conjugacy. |
+| [U5]({{< var homeworks_url >}}/units/unit5.html) | Approximate Bayesian Inference | One posterior four ways: PGM, MAP (Newton), Laplace, MCMC — and why mode ≠ mean. |
+| [Capstone]({{< var homeworks_url >}}/units/capstone.html) | Open Bayesian Modelling with Uncertainty | Your model + a valid uncertainty method (BLR / Laplace / MCMC) on a new dataset, with a results-and-ethics report. |
+
+Assignment materials (starter code, autograder, data) are distributed separately via
+GitHub Classroom — see [Assessment](assessment.qmd) for how homeworks fit into the course
+grade. The [source repository]({{< var homeworks_repo >}}) is private; no solution content
+is published.
