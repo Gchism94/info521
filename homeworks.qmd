@@ -7,25 +7,29 @@ page-layout: full
 
 The homework sequence is **8 deliverables** — seven units plus an open **Capstone** —
 consolidated into connected arcs rather than isolated weekly problem sets. Every deliverable
-is graded **pass / not-yet** against published specifications (no points, no partial credit,
-revise-and-resubmit), and each unit page states its objectives, prerequisites, cross-unit
-connections, and what to submit.
+is graded **pass / not-yet** against published specifications: no points, no partial credit,
+revise-and-resubmit.
 
-**Browse the units on the [homeworks site]({{< var homeworks_url >}})**, including the
-[full grading policy]({{< var homeworks_url >}}/grading.html) (bundles, revise budget, and
-the letter-grade ladder).
+Each unit's full page — objectives, what you'll build, prerequisites, what to submit, and its
+**rubric** — is posted in **D2L**. Assignment materials (starter code, autograder, data) are
+distributed via **GitHub Classroom**; your submissions live in a private repo visible only to
+you and the instructor. See [Assessment](assessment.qmd) for how the units and Capstone set
+your letter grade.
 
 | Unit | Title | You'll build |
 |:----:|-------|--------------|
-| [U0]({{< var homeworks_url >}}/units/unit0.html) | Tooling & Reproducibility | A working pipeline (clone → `pytest` → render → push) and the seed policy every later unit assumes. |
-| [U1]({{< var homeworks_url >}}/units/unit1.html) | Linear Models & Model Selection | One dataset, three fits: scalar least squares → matrix normal equations → cross-validated polynomial. |
-| [U2a]({{< var homeworks_url >}}/units/unit2a.html) | Probability & Estimation Foundations (I) | Poisson probabilities + derivations: the Bernoulli MLE and its Fisher-information floor. |
-| [U2b]({{< var homeworks_url >}}/units/unit2b.html) | Probability & Estimation Foundations (II) | Written-only: the matrix-calculus identities Unit 1 applied, Gaussian independence, MLE unbiasedness, Beta moments. |
-| [U3]({{< var homeworks_url >}}/units/unit3.html) | Monte Carlo & Estimators | Estimating 𝔼[f(X)] and π by sampling; O(1/√N) convergence and the curse of dimensionality. |
-| [U4]({{< var homeworks_url >}}/units/unit4.html) | Bayesian Inference, Exact & Conjugate | Predictive-variance error bars, the exact coin-game posterior, Inverse-Gamma conjugacy. |
-| [U5]({{< var homeworks_url >}}/units/unit5.html) | Approximate Bayesian Inference | One posterior four ways: PGM, MAP (Newton), Laplace, MCMC — and why mode ≠ mean. |
-| [Capstone]({{< var homeworks_url >}}/units/capstone.html) | Open Bayesian Modelling with Uncertainty | Your model + a valid uncertainty method (BLR / Laplace / MCMC) on a new dataset, with a results-and-ethics report. |
+| **U0** | Tooling & Reproducibility | A working pipeline (clone → `pytest` → render → push) and the seed policy every later unit assumes. |
+| **U1** | Linear Models & Model Selection | One dataset, three fits: scalar least squares → matrix normal equations → cross-validated polynomial. |
+| **U2a** | Probability & Estimation Foundations (I) | Poisson probabilities + derivations: the Bernoulli MLE and its Fisher-information floor. |
+| **U2b** | Probability & Estimation Foundations (II) | Written-only: the matrix-calculus identities Unit 1 applies, Gaussian independence, MLE unbiasedness, Beta moments. |
+| **U3** | Monte Carlo & Estimators | Estimating 𝔼[f(X)] and π by sampling; O(1/√N) convergence and the curse of dimensionality. |
+| **U4** | Bayesian Inference, Exact & Conjugate | Predictive-variance error bars, the exact coin-game posterior, Inverse-Gamma conjugacy. |
+| **U5** | Approximate Bayesian Inference | One posterior four ways: PGM, MAP (Newton), Laplace, MCMC — and why mode ≠ mean. |
+| **Capstone** | Open Bayesian Modelling with Uncertainty | Your model + a valid uncertainty method (BLR / Laplace / MCMC) on a new dataset, with a results-and-ethics report. |
 
-Assignment materials (starter code, autograder, data) are distributed via **GitHub
-Classroom** — submissions live in your private repo, visible only to you and Greg. See
-[Assessment](assessment.qmd) for how the units and Capstone determine your letter grade.
+## How the units connect
+
+The sequence spirals rather than resets: **U0**'s seed policy is graded again in U3 and U5 ·
+**U2b proves** the matrix-calculus identities **U1 applies** · U2b's Beta moments power
+**U4**'s conjugate priors, and its Hessian identity returns in **U5** · U4's exact posteriors
+become the targets **U5 approximates** · the Capstone's method menu *is* U4 + U5.

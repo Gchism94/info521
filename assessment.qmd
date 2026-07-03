@@ -13,8 +13,8 @@ averaged down for an early attempt. Your final letter grade reflects **how many 
 you complete to standard**, so the path to the grade you want is simply to meet the standards
 on more of the work. Nothing here is curved, weighted, or scored on a percentage.
 
-The full policy — bundle definitions, the revise budget, and the complete ladder — is
-published on the [homeworks grading page]({{< var homeworks_url >}}/grading.html).
+The full policy — the deliverables, bundles, revise budget, and the letter-grade ladder —
+follows on this page.
 
 ---
 
@@ -28,10 +28,10 @@ The graded work is **8 deliverables**, each pass / not-yet:
 - **Capstone** — independent synthesis: choose a model, fit it, quantify uncertainty by a
   valid Bayesian method, and report results + ethics.
 
-Unit-by-unit descriptions, objectives, and what to submit are on the
-[homeworks site]({{< var homeworks_url >}}) (also linked from [Homeworks](homeworks.qmd) in
-the navbar). Assignment materials are distributed via **GitHub Classroom** — submissions are
-pushed to your private repo, visible only to you and Greg.
+Unit-by-unit descriptions, objectives, and rubrics are posted in **D2L** (the units are
+summarized on the [Homeworks](homeworks.qmd) page). Assignment materials — starter code,
+autograder, data — are distributed via **GitHub Classroom**; submissions are pushed to your
+private repo, visible only to you and the instructor.
 
 ### What it takes to pass a unit
 

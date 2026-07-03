@@ -3,6 +3,6 @@ hub_repo_url:     https://github.com/gchism94/info521
 hub_url:          https://gchism94.github.io/info521
 slides_url:       https://gchism94.github.io/info521-slides-2026
 activities_url:   https://gchism94.github.io/info521-activities-2026
-homeworks_repo:   https://github.com/gchism94/info521-homeworks-2026
-homeworks_url:    https://gchism94.github.io/info521-homeworks-2026
+# Homework unit pages + rubrics are delivered via D2L (the repo is private); the hub only
+# summarizes them on homeworks.qmd, so no public homeworks_url is linked.
 classroom_url:    TODO
