@@ -26,7 +26,6 @@ the letter-grade ladder).
 | [U5]({{< var homeworks_url >}}/units/unit5.html) | Approximate Bayesian Inference | One posterior four ways: PGM, MAP (Newton), Laplace, MCMC — and why mode ≠ mean. |
 | [Capstone]({{< var homeworks_url >}}/units/capstone.html) | Open Bayesian Modelling with Uncertainty | Your model + a valid uncertainty method (BLR / Laplace / MCMC) on a new dataset, with a results-and-ethics report. |
 
-Assignment materials (starter code, autograder, data) are distributed separately via
-GitHub Classroom — see [Assessment](assessment.qmd) for how homeworks fit into the course
-grade. The [source repository]({{< var homeworks_repo >}}) is private; no solution content
-is published.
+Assignment materials (starter code, autograder, data) are distributed via **GitHub
+Classroom** — submissions live in your private repo, visible only to you and Greg. See
+[Assessment](assessment.qmd) for how the units and Capstone determine your letter grade.

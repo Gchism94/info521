@@ -28,7 +28,7 @@ Six weekly peer-engagement loops: interactive tool + mastery quiz → reflection
 :::{.g-col-12 .g-col-md-4}
 ### Assessment
 
-Projects (55%), Homeworks (30%), Checkpoints (9%), Peer engagement (5%), Prerequisite quiz (1%). Two integrative projects replace traditional exams.
+Specifications grading — no points, no weighted averages. Eight pass/not-yet deliverables (7 homework units + a Capstone) set your letter on a published ladder; revise-and-resubmit is built in.
 
 [See Grading Scheme →](assessment.qmd)
 :::

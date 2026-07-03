@@ -3,87 +3,130 @@ title: "Assessment & Grading"
 page-layout: full
 ---
 
-## Grading Scheme (Scheme B: Specifications Grading)
+## How Grading Works — Specifications Grading
 
-| Component | Weight |
-|-----------|--------|
-| **Projects (2)** | 55% |
-| **Homeworks** | 30% |
-| **Checkpoints (3)** | 9% |
-| **Peer-Engagement Loops** | 5% |
-| **Prerequisite Quiz** | 1% |
+**Every assignment is graded pass / not-yet, never with partial points.** Each one comes
+with a short, explicit list of standards ("specifications") you can see before you start. If
+your work meets all of them, it passes. If it doesn't yet, you get specific feedback and
+**revise and resubmit** — "not-yet" is a step in the process, not a penalty. You are never
+averaged down for an early attempt. Your final letter grade reflects **how many deliverables
+you complete to standard**, so the path to the grade you want is simply to meet the standards
+on more of the work. Nothing here is curved, weighted, or scored on a percentage.
 
-**Specifications Grading**: Work is evaluated on a **pass/revise** basis rather than point accumulation. Each assessment bundle (projects, homeworks, checkpoints) has a defined specification; work meeting the spec earns the weighted points. Work not meeting the spec may be revised and resubmitted within a grace period.
+The full policy — bundle definitions, the revise budget, and the complete ladder — is
+published on the [homeworks grading page]({{< var homeworks_url >}}/grading.html).
 
 ---
 
-## Projects (55% of grade)
+## The 8 Deliverables
 
-Two integrative projects replace traditional midterm and final exams. Each project synthesizes multiple weeks of the course arc.
+The graded work is **8 deliverables**, each pass / not-yet:
 
-### Project 1: "One Problem, Three Lenses"
-*Due Week 5 (TODO — calendar TBD)*
+- **U0 — Tooling & Reproducibility** — the onboarding **completion floor**. It doesn't by
+  itself raise your letter, but every grade above E requires it.
+- **Six core units** — **U1, U2a, U2b, U3, U4, U5** — the rungs of the ladder.
+- **Capstone** — independent synthesis: choose a model, fit it, quantify uncertainty by a
+  valid Bayesian method, and report results + ethics.
+
+Unit-by-unit descriptions, objectives, and what to submit are on the
+[homeworks site]({{< var homeworks_url >}}) (also linked from [Homeworks](homeworks.qmd) in
+the navbar). Assignment materials are distributed via **GitHub Classroom** — submissions are
+pushed to your private repo, visible only to you and Greg.
+
+### What it takes to pass a unit
+
+A unit passes only when **all three bundles** are met:
+
+1. **Correctness** — autograded method-validity / outcome specs (the core gateway).
+2. **Interpretation (CERL)** — Claim, Evidence, Reasoning, Limits — human-confirmed.
+3. **Process** — reproducibility and the submission contract.
+
+Miss a bundle and the unit is **not-yet**: you revise *that bundle* and resubmit, not the
+whole unit.
+
+---
+
+## The Letter Ladder
+
+Letters are straight **A B C D E** (no plus/minus). **U0 must be passed in every case
+above E.**
+
+| Letter | Requirement |
+|--------|-------------|
+| **A** | all 6 core units **and** the Capstone |
+| **B** | all 6 core units, **or** 5 core + Capstone |
+| **C** | 5 core units, **or** 4 core + Capstone |
+| **D** | 4 core units |
+| **E** | 3 or fewer core units, **or** U0 not passed |
+
+The Capstone **gates the A** and is otherwise worth one core unit of lift at the B/C
+boundaries — capped, so it can never substitute for full core coverage on the way to an A.
+
+---
+
+## Revise & Resubmit Budget
+
+- **Correctness (autograded): unlimited resubmissions** until the unit's deadline — the
+  autograder re-runs on every push at no human cost, so keep pushing until it passes.
+- **Interpretation + Process (human-confirmed): one** revise-and-resubmit per unit, **plus a
+  course-wide pool of 3 tokens** for a second human-bundle revision on the units you find
+  hardest.
+
+**Dates** (deadlines and post-feedback revision windows): TODO — calendar pending.
+
+---
+
+## Other Course Components
+
+*The components below are part of the course design but carry **no percentage weight** —
+nothing in this course is point-scored. How each integrates with the specifications ladder
+is being finalized (TODO).*
+
+### Projects
+
+Two integrative projects replace traditional midterm and final exams. Each synthesizes
+multiple weeks of the course arc.
+
+**Project 1: "One Problem, Three Lenses"** — *Due Week 5 (TODO — calendar TBD)*
 
 Use a single regression problem with a clinical dataset. Solve it three ways:
+
 - **Least Squares**: classical normal equations and interpretation
 - **Maximum Likelihood Estimation**: Gaussian model, negative log-likelihood
 - **Bayesian**: posterior inference and credible intervals
 
 Synthesis question: How do the three approaches diverge and converge? What assumptions differ?
 
-### Project 2: "From Inference to Discovery"
-*Due Week 7 (TODO — calendar TBD)*
+**Project 2: "From Inference to Discovery"** — *Due Week 7 (TODO — calendar TBD)*
 
 Same dataset, now tasked with discovering structure:
+
 - **Approximate Inference**: variational inference or sampling
 - **Discriminative Classification**: logistic regression or SVM
 - **Unsupervised Learning**: k-means clustering + PCA for dimensionality reduction
 
 Synthesis question: What story does the data tell when you stop presuming its structure?
 
-**Submission**: GitHub Classroom. See [GitHub Classroom]({{< var classroom_url >}}) for the invite link.
+**Submission**: GitHub Classroom. See [GitHub Classroom]({{< var classroom_url >}}) for the
+invite link.
 
----
+### Checkpoints
 
-## Homeworks (30% of grade)
+Three retakeable in-class assessments (Weeks 2, 4, 6):
 
-Short problem sets (1–2 per week) emphasizing computation and interpretation. Deployed via **GitHub Classroom** — all submissions must be pushed to your private repo. Homeworks are practice-graded on a pass/revise basis; three passes earn full homework credit.
-
-Unit-by-unit descriptions, objectives, and the homework grading policy are on the
-[homeworks site]({{< var homeworks_url >}}) (also linked from [Homeworks](homeworks.qmd) in
-the navbar). The [source repository]({{< var homeworks_repo >}}) containing specifications
-and autograder fixtures is private; no solution content is visible — only you and Greg can
-see your submission repo.
-
----
-
-## Checkpoints (9% of grade)
-
-Three retakeable in-class assessments (Weeks 2, 4, 6) covering:
 - **Checkpoint 1 (Week 2)**: Linear regression, bias–variance, regularization
 - **Checkpoint 2 (Week 4)**: Classification, likelihood, Bayesian inference
 - **Checkpoint 3 (Week 6)**: Unsupervised learning, dimensionality reduction
 
-Each checkpoint is offered twice (original + retake within 1 week). You keep your best score. Passing all three checkpoints earns the 9% weighting.
+Each checkpoint is offered twice (original + retake within 1 week); you keep your best
+result. **Dates**: scheduled during class time. TODO — calendar pending.
 
-**Dates**: Scheduled during class time. TODO — calendar pending.
+### Peer-Engagement Loops
 
----
+Six weekly loops (Weeks 1–6): complete the interactive tool, generate your token, post to
+D2L, review peers, integrate feedback. See [Activities](activities.qmd) for loop details.
 
-## Peer-Engagement Loops (5% of grade)
+### Prerequisite Quiz
 
-Six weekly loops (Weeks 1–6): complete the interactive tool, generate your token, post to D2L, review peers, integrate feedback. Completing all six loops earns 5%.
-
-See [Activities](activities.qmd) for loop details.
-
----
-
-## Prerequisite Quiz (1% of grade)
-
-A brief assessment (administered Week 1) on linear algebra and probability fundamentals. Pass = 1% credit. It's primarily diagnostic; most students pass.
-
----
-
-## Revision & Grace Policies
-
-All work (projects, homeworks, checkpoints) can be revised. You have **3 days after feedback** to resubmit with revisions. The goal is mastery, not perfection on first attempt.
+A brief diagnostic (administered Week 1) on linear algebra and probability fundamentals.
+Most students pass; it exists to surface gaps early, not to gatekeep.
