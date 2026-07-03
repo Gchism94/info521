@@ -9,15 +9,17 @@ The schedule below maps each module to its slides, activity loop, and assessment
 
 | Week | Topic | Slides | Activity Loop | Readings | Assessment |
 |------|-------|--------|--------------|----------|------------|
-| 1 | **Linear Models & Least Squares** | [Module 1]({{< var slides_url >}}/modules/m1-linear-least-squares/) | [week01-least-squares]({{< var activities_url >}}/week01-least-squares/) | Murphy: Ch. 1–2; Prince: §2.1 | — |
-| 2 | **Generalization** | [Module 2]({{< var slides_url >}}/modules/m2-generalization/) | [week02-bias-variance]({{< var activities_url >}}/week02-bias-variance/) | Murphy: Ch. 5; James et al. § 6.1 | Checkpoint 1 (TODO) |
-| 3 | **MLE & Parameter Uncertainty** | [Module 3]({{< var slides_url >}}/modules/m3-mle-uncertainty/) | — | Murphy: Ch. 3–4 | — |
-| 4 | **Bayesian Inference** | [Module 4]({{< var slides_url >}}/modules/m4-bayesian-inference/) | [week03-bayesian-updating]({{< var activities_url >}}/week03-bayesian-updating/) | Think Bayes: Ch. 2–3 | Checkpoint 2 (TODO) |
-| 5 | **Approximate Inference & Bayesian Classification** | [Module 5]({{< var slides_url >}}/modules/m5-approximate-inference/) | [week04-logistic-regression]({{< var activities_url >}}/week04-logistic-regression/) | TBD | **Project 1 Due (TODO)** |
-| 6 | **SVM & Clustering** | [Module 6]({{< var slides_url >}}/modules/m6-svm-clustering/) | [week05-kmeans]({{< var activities_url >}}/week05-kmeans/) | Murphy: Ch. 8; Prince: Ch. 12 | Checkpoint 3 (TODO) |
-| 7 | **PCA** | [Module 7]({{< var slides_url >}}/modules/m7-pca/) | [week06-pca]({{< var activities_url >}}/week06-pca/) | Murphy: Ch. 20; Prince: Ch. 11 | **Project 2 Due (TODO)** |
+| 1 | **Linear Models & Least Squares** | [Module 1]({{< var slides_url >}}/modules/m1-linear-least-squares/) | [week01-least-squares]({{< var activities_url >}}/week01-least-squares/) | PML Ch. 1 (§1.1–1.3); MML Ch. 2 & Ch. 9 | — |
+| 2 | **Generalization** | [Module 2]({{< var slides_url >}}/modules/m2-generalization/) | [week02-bias-variance]({{< var activities_url >}}/week02-bias-variance/) | PML §4.7 (bias–variance) & §11.3 (ridge); MML Ch. 5 (review) | Checkpoint 1 (TODO) |
+| 3 | **MLE & Parameter Uncertainty** | [Module 3]({{< var slides_url >}}/modules/m3-mle-uncertainty/) | — | PML Ch. 2–3; §4.1–4.2 (MLE, incl. §4.2.5) & §4.7 (Fisher info); MML Ch. 6 (review) | — |
+| 4 | **Bayesian Inference** | [Module 4]({{< var slides_url >}}/modules/m4-bayesian-inference/) | [week03-bayesian-updating]({{< var activities_url >}}/week03-bayesian-updating/) | PML §4.6 (Bayes & conjugacy) & §11.7 (Bayesian linear regression); Think Bayes Ch. 2 & Ch. 4 (supp.: Ch. 18) | Checkpoint 2 (TODO) |
+| 5 | **Approximate Inference & Bayesian Classification** | [Module 5]({{< var slides_url >}}/modules/m5-approximate-inference/) | [week04-logistic-regression]({{< var activities_url >}}/week04-logistic-regression/) | PML §10.1–10.2 (logistic; review Ch. 9) & §4.6.8.2 (Laplace); Think Bayes Ch. 19 (MCMC); optional: MML Ch. 7 | **Project 1 Due (TODO)** |
+| 6 | **SVM & Clustering** | [Module 6]({{< var slides_url >}}/modules/m6-svm-clustering/) | [week05-kmeans]({{< var activities_url >}}/week05-kmeans/) | PML §21.3–21.4 (k-means, GMM/EM); MML Ch. 11 — SVM is lecture-only | Checkpoint 3 (TODO) |
+| 7 | **PCA** | [Module 7]({{< var slides_url >}}/modules/m7-pca/) | [week06-pca]({{< var activities_url >}}/week06-pca/) | MML §4.2 (eigendecomposition) & Ch. 10 (PCA); PML §20.1 (secondary) | **Project 2 Due (TODO)** |
 
-*(Activity slugs are week-named and land one week after their module opens from Module 4 on — modules ≠ weeks. Module 3 has no activity; a parameter-uncertainty tool is a future build.)*
+*(Activity slugs are week-named and land one week after their module opens from Module 4 on — modules ≠ weeks. Module 3 has no activity; a parameter-uncertainty tool is a future build. Cross-validation (M2) is lecture-only — no assigned reading.)*
+
+**Where next (optional epilogue — no deck, no assessment):** neural networks pick up exactly where the M7 synthesis ends — UDL Ch. 2–3 & 6–7.
 
 ---
 
@@ -25,7 +27,7 @@ The schedule below maps each module to its slides, activity loop, and assessment
 
 - **Slides**: Links to module landing pages listing the live reveal.js decks (dark/light toggle, top-right; a rendered `.pdf` ships alongside each deck).
 - **Activity Loop**: Interactive tool + retakeable mastery quiz → reflection → peer review → revise (completion tokens honor-verified).
-- **Readings**: Primary texts; specific chapters/sections to be refined.
+- **Readings**: all open-licensed — **PML** = Murphy, *Probabilistic Machine Learning: An Introduction* (2022); **MML** = Deisenroth, Faisal & Ong, *Mathematics for Machine Learning*; **Think Bayes** = Downey, *Think Bayes* (2e); **UDL** = Prince, *Understanding Deep Learning*. Section numbers follow PML1 (2022) — verify against your printing.
 - **Assessment**: Checkpoint sittings and project deadlines (calendar TBD).
 
 All external links open in a new tab.
