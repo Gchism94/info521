@@ -16,13 +16,14 @@ All slides are built with **Quarto + reveal.js** and rendered to portable, self-
 |--------|-------|--------|-------|
 | 1 | **Linear Models & Least Squares** | Ready | [Setup & Model]({{< var slides_url >}}/modules/m1-linear-least-squares/m1a-setup-and-model.html) · [Normal Equations]({{< var slides_url >}}/modules/m1-linear-least-squares/m1b-normal-equations.html) · [Appendix: Matrix Calculus]({{< var slides_url >}}/modules/m1-linear-least-squares/appendix-matrix-calculus.html) |
 | 2 | **Generalization** | Ready | [Evaluation & Cross-Validation]({{< var slides_url >}}/modules/m2-generalization/m2a-evaluation-cv.html) · [Bias–Variance & Ridge]({{< var slides_url >}}/modules/m2-generalization/m2b-bias-variance-ridge.html) |
-| 3 | **MLE & Parameter Uncertainty** | Lecture B ready · Lecture A forthcoming | [Properties of the MLE]({{< var slides_url >}}/modules/m3-mle-uncertainty/m3b-mle-uncertainty.html) · [Appendix: Covariance]({{< var slides_url >}}/modules/m3-mle-uncertainty/appendix-covariance.html) |
-| 4 | **Bayesian Inference** | In progress | — |
-| 5 | **Approximate Inference & Bayesian Classification** | In progress | — |
-| 6 | **SVM & Clustering** | In progress | — |
-| 7 | **PCA** | In progress | — |
+| 3 | **MLE & Parameter Uncertainty** | Ready | [Likelihood & MLE]({{< var slides_url >}}/modules/m3-mle-uncertainty/m3a-likelihood-mle.html) · [Properties of the MLE]({{< var slides_url >}}/modules/m3-mle-uncertainty/m3b-mle-uncertainty.html) · [Appendix: Covariance]({{< var slides_url >}}/modules/m3-mle-uncertainty/appendix-covariance.html) |
+| 4 | **Bayesian Inference** | Ready | [Priors & Beta-Binomial]({{< var slides_url >}}/modules/m4-bayesian-inference/m4a-bayes-beta-binomial.html) · [Conjugate Gaussian Posterior]({{< var slides_url >}}/modules/m4-bayesian-inference/m4b-gaussian-posterior.html) |
+| 5 | **Approximate Inference & Bayesian Classification** | Ready | [Logistic Regression & Newton]({{< var slides_url >}}/modules/m5-approximate-inference/m5a-logistic-newton.html) · [Laplace & Sampling]({{< var slides_url >}}/modules/m5-approximate-inference/m5b-laplace-sampling.html) |
+| 6 | **SVM & Clustering** | Ready | [Maximum-Margin Classification]({{< var slides_url >}}/modules/m6-svm-clustering/m6a-svm.html) · [k-means & the Unsupervised Turn]({{< var slides_url >}}/modules/m6-svm-clustering/m6b-kmeans-clustering.html) |
+| 7 | **PCA** | Ready | [PCA & Course Synthesis]({{< var slides_url >}}/modules/m7-pca/m7a-pca.html) |
 
-Each module also has a landing page listing its decks: [M1]({{< var slides_url >}}/modules/m1-linear-least-squares/) · [M2]({{< var slides_url >}}/modules/m2-generalization/) · [M3]({{< var slides_url >}}/modules/m3-mle-uncertainty/).
+Each module also has a landing page listing its decks:
+[M1]({{< var slides_url >}}/modules/m1-linear-least-squares/) · [M2]({{< var slides_url >}}/modules/m2-generalization/) · [M3]({{< var slides_url >}}/modules/m3-mle-uncertainty/) · [M4]({{< var slides_url >}}/modules/m4-bayesian-inference/) · [M5]({{< var slides_url >}}/modules/m5-approximate-inference/) · [M6]({{< var slides_url >}}/modules/m6-svm-clustering/) · [M7]({{< var slides_url >}}/modules/m7-pca/).
 
 ---
 
