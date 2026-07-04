@@ -33,8 +33,7 @@ format-links: [typst]
 
 ::: {.callout-warning title="Confirm before publishing (bracketed throughout)"}
 Instructor of record + contact + office + office hours; TA (if any); term & modality;
-whether FCML / PML2 / IML remain as reference texts; final HW-unit and checkpoint counts
-(from the pacing decisions still open); and all UA policy wording — this syllabus *links* to
+whether FCML / PML2 / IML remain as reference texts; and all UA policy wording — this syllabus *links* to
 the official UA templates rather than quoting them, so that language is never authored here.
 Assessment percentages reflect the approved redesign scheme; policy prose is adapted from the
 Fall 2025 INFO 521 syllabus (used with permission).
@@ -128,12 +127,12 @@ are from the PML (2022) table of contents — verify against your printing.
 | Wk | Module & topic | Readings | Peer loop | Key work due |
 |----|----------------|----------|-----------|--------------|
 | 1 | M1 · Foundations & Linear Regression | PML Ch.1 (§1.1–1.3, §1.5); MML Ch.2; MML Ch.9 (§9.1–9.2) | Least squares | Prerequisite quiz; HW Units 0–1; **Project 1 assigned** |
-| 2 | M2 · Bias–Variance & Regularization | PML §4.7; PML §11.3†; MML Ch.5 | Bias–variance & ridge | HW Units 2a–2b; *Checkpoint 1 (proposed)* |
-| 3 | M3 · Probability, Likelihood & MLE | PML Ch.2, Ch.3, §4.1–4.2 (incl. §4.2.5), §4.7; MML Ch.6 | — | HW Unit 3 |
-| 4 | M4 · Bayesian Inference | PML §4.6; Think Bayes Ch.2, Ch.4 (supp.: Ch.18); PML §11.7† | Bayesian updating | HW Unit 4; **Project 1 due** |
-| 5 | M5 · Approximate Inference & Classification | PML Ch.10 (§10.1–10.2; review Ch.9); PML §4.6.8; Think Bayes Ch.19; MML Ch.7 (optional) | Logistic regression | HW Unit 5; **Project 2 assigned**; *Checkpoint 2 (proposed)* |
-| 6 | M6 · SVM & Clustering | PML Ch.21 (§21.3–21.4); MML Ch.11; PML Ch.17 (§17.3†, optional) | K-means | Capstone HW (in progress) |
-| 7 | M7 · Dimensionality Reduction (PCA) | MML Ch.4 (§4.2), Ch.10; PML Ch.20 (§20.1) | PCA | Capstone HW due; **Project 2 due** |
+| 2 | M2 · Bias–Variance & Regularization | PML §4.7; PML §11.3†; MML Ch.5 | Bias–variance & ridge | HW Units 2a–2b; Checkpoint 1 (normal equations) |
+| 3 | M3 · Probability, Likelihood & MLE | PML Ch.2, Ch.3, §4.1–4.2 (incl. §4.2.5), §4.7; MML Ch.6 | — | HW Unit 3; Checkpoint 2 (MLE) |
+| 4 | M4 · Bayesian Inference | PML §4.6; Think Bayes Ch.2, Ch.4 (supp.: Ch.18); PML §11.7† | Bayesian updating | HW Unit 4; Checkpoint 3 (posterior); **Project 1 due** |
+| 5 | M5 · Approximate Inference & Classification | PML Ch.10 (§10.1–10.2; review Ch.9); PML §4.6.8; Think Bayes Ch.19; MML Ch.7 (optional) | Logistic regression | HW Unit 5; Checkpoint 4 (Newton–Raphson); **Project 2 assigned** |
+| 6 | M6 · SVM & Clustering | PML Ch.21 (§21.3–21.4); MML Ch.11; PML Ch.17 (§17.3†, optional) | K-means | Capstone HW (in progress); Checkpoint 5 (k-means / PCA) |
+| 7 | M7 · Dimensionality Reduction (PCA) | MML Ch.4 (§4.2), Ch.10; PML Ch.20 (§20.1) | PCA | Capstone HW due; checkpoint retakes conclude; **Project 2 due** |
 
 *Readings are assigned before each module (≈10–20 pages/module; see §2.5). Cross-validation
 (Wk 2) and SVMs (Wk 6) are treated at concept level in lecture. Reading links live on the
@@ -175,8 +174,10 @@ not required; relevant concepts are introduced as needed.
 - **Weekly rhythm:** each module delivers its lecture material (slides/notes, with interactive
   in-lecture tools), an assigned reading, a **peer-engagement loop**, and a **homework unit**.
 - **Peer-engagement loops** run in four stages across the week: (1) work through the module's
-  interactive tool and pass its mastery check; (2) post a short reflection to your team's D2L
-  discussion; (3) give structured peer review to teammates; (4) respond and revise.
+  interactive tool and pass its built-in mastery check (the loop's knowledge check); (2) post a
+  short reflection to your team's D2L discussion; (3) give structured peer review to **every
+  member of your team**; (4) respond to the reviews on your own post and revise. **Credit
+  requires completing all four stages — including replying to all of your teammates.**
 - **Readings:** ≈10–20 pages before each module. Estimate ≈1 hour per 10 pages
   (<https://cte.rice.edu/resources/workload-estimator>). Tell us if that estimate is off.
 - **Content:** lecture materials, external links, and textbook excerpts are posted on D2L; the
@@ -224,8 +225,10 @@ No laptop? Borrow one from the library: <https://lib.arizona.edu/borrow/tech>.
 ### 3.1 Progress and Completion
 
 **3.1.1 Participation.** Participation in this course means engaging in the weekly peer-engagement
-loops in good faith: completing the module activity, posting a substantive reflection on time, and
-giving your teammates constructive, respectful peer review. See the climate guidelines in §3.2.2.
+loops in good faith: completing the module activity, posting a substantive reflection on time,
+giving constructive, respectful peer review to **every member of your team**, and responding to the
+reviews you receive. A loop earns credit only when all stages — including replies to all teammates —
+are complete. See the climate guidelines in §3.2.2.
 
 **3.1.2 Late work, revision, and missed assessments.** This course is built around revision, so the
 policies differ from a traditional exam course:
@@ -236,7 +239,8 @@ policies differ from a traditional exam course:
   pool of revision tokens.
 - **Peer-loop** stages are time-bound within the week because they depend on teammates; missing a
   stage cannot be made up after the loop closes, but the loop is a small (5%) component.
-- **Checkpoints** are brief, scheduled progress checks; see §3.1.3.
+- **Checkpoints** are brief, scheduled derivation checks with a built-in retake (alternate
+  version, the following week); see §3.1.3.
 - Documented medical and family emergencies are always accommodated — contact the instructor.
 
 **3.1.3 Grading.**
@@ -247,8 +251,8 @@ policies differ from a traditional exam course:
 |---|---|---|---|
 | Summative | **Projects** (×2) | Two applied projects. *Project 1 — One Problem, Three Lenses:* one dataset through least squares, MLE, and a Bayesian posterior. *Project 2 — From Inference to Discovery:* approximate inference and classification through clustering and dimensionality reduction. | **55** |
 | Formative | **Homework** | Consolidated units of math + programming exercises, specs-graded with revision. | **30** |
-| Summative | **Checkpoints** | Brief progress checks across the term. *[Count/timing to confirm.]* | **9** |
-| Formative | **Peer-engagement loops** | Weekly tool + reflection + peer review + revise. | **5** |
+| Summative | **Checkpoints** (×5) | Brief, closed-book, in-class derivation checks (~15–20 min, one derivation each) that gate the project milestones. Sittings in Weeks 2–6 — one per module just taught — each retakeable (alternate version) the following week. | **9** |
+| Formative | **Peer-engagement loops** | Weekly tool + reflection + peer review of every teammate + respond & revise. | **5** |
 | Formative | **Prerequisite quiz** | Early self-assessment on course prerequisites. | **1** |
 
 *3.1.3.2 Specifications grading.* Each assignment lists explicit specifications; work that meets

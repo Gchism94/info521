@@ -116,16 +116,29 @@ invite link.
 
 ### Checkpoints
 
-Brief, closed-book, in-class derivation checks (~15–20 min, one derivation each) that
-**gate the project milestones** — see each project's docs for what gates what. Graded
-Satisfactory / Not-Yet; each is offered twice (original + retake) and you keep your best
-result. *Count and sitting weeks to be confirmed — proposed sittings in Weeks 2 and 5
-(per the [Syllabus](syllabus.qmd) §1.6). Dates: TODO — calendar pending.*
+**Five** brief, closed-book, in-class derivation checks (~15–20 min, one derivation each)
+that **gate the project milestones**. One sitting per week, Weeks 2–6, each covering the
+module just taught; each is offered twice (original + an alternate-version retake the
+following week — retakes conclude in Week 7) and you keep your best result. Graded
+Satisfactory / Not-Yet.
+
+| Sitting | Checkpoint | Gates |
+|---|---|---|
+| Week 2 | 1 — Normal equations | Project 1.1 |
+| Week 3 | 2 — MLE | Project 1.2 |
+| Week 4 | 3 — Identify the conjugate posterior | Project 1.3 |
+| Week 5 | 4 — Newton–Raphson update | Project 2 · Gate A |
+| Week 6 | 5 — k-means objective & PCA | Project 2 · Gate B |
+
+*Dates: TODO — calendar pending.*
 
 ### Peer-Engagement Loops
 
-Six weekly loops — every week except Week 3 (the MLE module has no activity): complete the
-interactive tool, generate your token, post to D2L, review peers, integrate feedback. See
+Six weekly loops — every week except Week 3 (the MLE module has no activity). Each loop:
+complete the interactive tool and pass its built-in mastery check (the loop's knowledge
+check), post your reflection + token to your team's D2L discussion, give peer review to
+**every member of your team**, then respond to the reviews on your post and revise.
+**Credit requires all stages, including replies to all teammates.** See
 [Activities](activities.qmd) for loop details.
 
 ### Prerequisite Quiz
