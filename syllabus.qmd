@@ -1,7 +1,32 @@
 ---
 title: "Syllabus — INFO 521: Introduction to Machine Learning"
 page-layout: full
+format:
+  html: default
+  # Nicely-styled PDF (Typst — bundled with Quarto, no TeX needed). UA navy
+  # headings, red links, letter paper. Served as _site/syllabus.pdf and linked
+  # from the page ("Other Formats" + the explicit link below the header).
+  typst:
+    papersize: us-letter
+    margin:
+      x: 1in
+      y: 1in
+    fontsize: 10.5pt
+    toc: true
+    toc-depth: 3
+    include-in-header:
+      - text: |
+          #set text(font: ("Helvetica Neue", "Helvetica", "Arial"))
+          #show heading.where(level: 1): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 2): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 3): set text(fill: rgb("#205a80"))
+          #show link: set text(fill: rgb("#AB0520"))
+format-links: [typst]
 ---
+
+::: {.content-visible when-format="html"}
+[📄 Download this syllabus as a PDF](syllabus.pdf)
+:::
 
 **[Term / Year — no dates per design]**  ·  **Modality/meeting pattern: [confirm — in-person / online-async / hybrid]**
 **Instructor: [posted per offering]**  ·  **[email]**
@@ -112,7 +137,7 @@ are from the PML (2022) table of contents — verify against your printing.
 
 *Readings are assigned before each module (≈10–20 pages/module; see §2.5). Cross-validation
 (Wk 2) and SVMs (Wk 6) are treated at concept level in lecture. Reading links live on the
-[Schedule](schedule.qmd) page.*
+[Schedule]({{< var hub_url >}}/schedule.html) page.*
 
 ---
 
