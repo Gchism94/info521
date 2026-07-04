@@ -127,13 +127,13 @@ are from the PML (2022) table of contents — verify against your printing.
 
 | Wk | Module & topic | Readings | Peer loop | Key work due |
 |----|----------------|----------|-----------|--------------|
-| 1 | M1 · Foundations & Linear Regression | PML Ch.1 (§1.1–1.3, §1.5); MML Ch.2; MML Ch.9 (§9.1–9.2) | Least squares | Prerequisite quiz; HW Unit 1; **Project 1 assigned** |
-| 2 | M2 · Bias–Variance & Regularization | PML §4.7; PML §11.3†; MML Ch.5 | Bias–variance & ridge | HW Unit 2; *Checkpoint 1 (proposed)* |
+| 1 | M1 · Foundations & Linear Regression | PML Ch.1 (§1.1–1.3, §1.5); MML Ch.2; MML Ch.9 (§9.1–9.2) | Least squares | Prerequisite quiz; HW Units 0–1; **Project 1 assigned** |
+| 2 | M2 · Bias–Variance & Regularization | PML §4.7; PML §11.3†; MML Ch.5 | Bias–variance & ridge | HW Units 2a–2b; *Checkpoint 1 (proposed)* |
 | 3 | M3 · Probability, Likelihood & MLE | PML Ch.2, Ch.3, §4.1–4.2 (incl. §4.2.5), §4.7; MML Ch.6 | — | HW Unit 3 |
 | 4 | M4 · Bayesian Inference | PML §4.6; Think Bayes Ch.2, Ch.4 (supp.: Ch.18); PML §11.7† | Bayesian updating | HW Unit 4; **Project 1 due** |
 | 5 | M5 · Approximate Inference & Classification | PML Ch.10 (§10.1–10.2; review Ch.9); PML §4.6.8; Think Bayes Ch.19; MML Ch.7 (optional) | Logistic regression | HW Unit 5; **Project 2 assigned**; *Checkpoint 2 (proposed)* |
-| 6 | M6 · SVM & Clustering | PML Ch.21 (§21.3–21.4); MML Ch.11; PML Ch.17 (§17.3†, optional) | K-means | HW Unit 6 |
-| 7 | M7 · Dimensionality Reduction (PCA) | MML Ch.4 (§4.2), Ch.10; PML Ch.20 (§20.1) | PCA | HW Unit 7 / capstone; **Project 2 due** |
+| 6 | M6 · SVM & Clustering | PML Ch.21 (§21.3–21.4); MML Ch.11; PML Ch.17 (§17.3†, optional) | K-means | Capstone HW (in progress) |
+| 7 | M7 · Dimensionality Reduction (PCA) | MML Ch.4 (§4.2), Ch.10; PML Ch.20 (§20.1) | PCA | Capstone HW due; **Project 2 due** |
 
 *Readings are assigned before each module (≈10–20 pages/module; see §2.5). Cross-validation
 (Wk 2) and SVMs (Wk 6) are treated at concept level in lecture. Reading links live on the

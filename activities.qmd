@@ -19,20 +19,23 @@ The completion token is **honor-verified**: each week's token changes, and an au
 
 ---
 
-## Weekly Tools (Weeks 1–6)
+## The Six Weekly Tools
 
 All tools are **buildless static HTML** — open them directly in your browser, take the quiz multiple times, and generate your completion token.
 
-| Week | Tool | Description |
-|------|------|-------------|
-| 1 | [Least Squares]({{< var activities_url >}}/week01-least-squares/) | Interactive least-squares regression: adjust data and weights to minimize loss. Quiz covers fitting, residuals, and normal equations. |
-| 2 | [Bias–Variance]({{< var activities_url >}}/week02-bias-variance/) | Visualize the bias–variance trade-off across polynomial degrees and noise levels. Quiz on regularization and model complexity. |
-| 3 | [Bayesian Updating]({{< var activities_url >}}/week03-bayesian-updating/) | Update a posterior belief as data arrives. Quiz on priors, likelihoods, conjugacy, and credible intervals. |
-| 4 | [Logistic Regression]({{< var activities_url >}}/week04-logistic-regression/) | Classify with the logistic function; adjust decision boundary. Quiz on sigmoid, MLE, and probabilistic classification. |
-| 5 | [k-means Clustering]({{< var activities_url >}}/week05-kmeans/) | Initialize and run k-means on 2D data. Quiz on centroid assignment, convergence, and cluster validity. |
-| 6 | [Principal Component Analysis]({{< var activities_url >}}/week06-pca/) | Rotate to principal components and visualize variance explained. Quiz on eigendecomposition and dimensionality reduction. |
+*(Tool slugs are week-named from an earlier numbering; from Module 4 on, each tool runs one week after its slug number — the **Runs in** column is authoritative and matches the [Schedule](schedule.qmd).)*
 
-**Week 7 (Neural Networks)** has no loop — the focus shifts to the final project.
+| Runs in | Module | Tool | Description |
+|---------|--------|------|-------------|
+| Week 1 | M1 | [Least Squares]({{< var activities_url >}}/week01-least-squares/) | Interactive least-squares regression: adjust data and weights to minimize loss. Quiz covers fitting, residuals, and normal equations. |
+| Week 2 | M2 | [Bias–Variance]({{< var activities_url >}}/week02-bias-variance/) | Visualize the bias–variance trade-off across polynomial degrees and noise levels. Quiz on regularization and model complexity. |
+| Week 4 | M4 | [Bayesian Updating]({{< var activities_url >}}/week03-bayesian-updating/) | Update a posterior belief as data arrives. Quiz on priors, likelihoods, conjugacy, and credible intervals. |
+| Week 5 | M5 | [Logistic Regression]({{< var activities_url >}}/week04-logistic-regression/) | Classify with the logistic function; adjust decision boundary. Quiz on sigmoid, MLE, and probabilistic classification. |
+| Week 6 | M6 | [k-means Clustering]({{< var activities_url >}}/week05-kmeans/) | Initialize and run k-means on 2D data. Quiz on centroid assignment, convergence, and cluster validity. |
+| Week 7 | M7 | [Principal Component Analysis]({{< var activities_url >}}/week06-pca/) | Rotate to principal components and visualize variance explained. Quiz on eigendecomposition and dimensionality reduction. |
+
+**Week 3 (MLE & Parameter Uncertainty)** has no loop — a written reflection stands in
+(a parameter-uncertainty tool is a future build).
 
 ---
 

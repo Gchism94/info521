@@ -9,18 +9,20 @@ page-layout: full
 with a short, explicit list of standards ("specifications") you can see before you start. If
 your work meets all of them, it passes. If it doesn't yet, you get specific feedback and
 **revise and resubmit** — "not-yet" is a step in the process, not a penalty. You are never
-averaged down for an early attempt. Your final letter grade reflects **how many deliverables
-you complete to standard**, so the path to the grade you want is simply to meet the standards
-on more of the work. Nothing here is curved, weighted, or scored on a percentage.
+averaged down for an early attempt. Within each component the path to the grade you want is
+simply to meet the standards on more of the work — no partial credit, no curving inside an
+assignment. The components combine into the course grade by the weights in the
+[Syllabus](syllabus.qmd) (§3.1.3): **Projects 55% · Homework 30% · Checkpoints 9% ·
+Peer-engagement loops 5% · Prerequisite quiz 1%**.
 
-The full policy — the deliverables, bundles, revise budget, and the letter-grade ladder —
-follows on this page.
+This page details the **Homework component** (its deliverables, bundles, revise budget, and
+ladder) and summarizes the other components.
 
 ---
 
-## The 8 Deliverables
+## Homework: The 8 Deliverables
 
-The graded work is **8 deliverables**, each pass / not-yet:
+The homework component (30%) is **8 deliverables**, each pass / not-yet:
 
 - **U0 — Tooling & Reproducibility** — the onboarding **completion floor**. It doesn't by
   itself raise your letter, but every grade above E requires it.
@@ -46,10 +48,11 @@ whole unit.
 
 ---
 
-## The Letter Ladder
+## The Homework Ladder
 
-Letters are straight **A B C D E** (no plus/minus). **U0 must be passed in every case
-above E.**
+The homework component's grade is set by a straight **A B C D E** ladder (no plus/minus) —
+the per-component ladder the [Syllabus](syllabus.qmd) §3.1.3.2 describes. **U0 must be
+passed in every case above E.**
 
 | Letter | Requirement |
 |--------|-------------|
@@ -78,16 +81,16 @@ boundaries — capped, so it can never substitute for full core coverage on the 
 
 ## Other Course Components
 
-*The components below are part of the course design but carry **no percentage weight** —
-nothing in this course is point-scored. How each integrates with the specifications ladder
-is being finalized (TODO).*
+*Weights per the [Syllabus](syllabus.qmd) §3.1.3: Projects **55%**, Checkpoints **9%**,
+Peer-engagement loops **5%**, Prerequisite quiz **1%**. Each is specs-graded internally
+(pass / not-yet with revision where the format allows).*
 
 ### Projects
 
 Two integrative projects replace traditional midterm and final exams. Each synthesizes
 multiple weeks of the course arc.
 
-**Project 1: "One Problem, Three Lenses"** — *Due Week 5 (TODO — calendar TBD)*
+**Project 1: "One Problem, Three Lenses"** — *Assigned Week 1 · due Week 4 (TODO — calendar TBD)*
 
 Use a single regression problem with a clinical dataset. Solve it three ways:
 
@@ -97,12 +100,13 @@ Use a single regression problem with a clinical dataset. Solve it three ways:
 
 Synthesis question: How do the three approaches diverge and converge? What assumptions differ?
 
-**Project 2: "From Inference to Discovery"** — *Due Week 7 (TODO — calendar TBD)*
+**Project 2: "From Inference to Discovery"** — *Assigned Week 5 · due Week 7 (TODO — calendar TBD)*
 
 Same dataset, now tasked with discovering structure:
 
-- **Approximate Inference**: variational inference or sampling
-- **Discriminative Classification**: logistic regression or SVM
+- **Approximate Inference**: Bayesian logistic regression — Newton/MAP, the Laplace
+  approximation, and a Metropolis sampler
+- **Discriminative Classification**: soft-margin SVM vs. the probabilistic classifier
 - **Unsupervised Learning**: k-means clustering + PCA for dimensionality reduction
 
 Synthesis question: What story does the data tell when you stop presuming its structure?
@@ -112,19 +116,17 @@ invite link.
 
 ### Checkpoints
 
-Three retakeable in-class assessments (Weeks 2, 4, 6):
-
-- **Checkpoint 1 (Week 2)**: Linear regression, bias–variance, regularization
-- **Checkpoint 2 (Week 4)**: Classification, likelihood, Bayesian inference
-- **Checkpoint 3 (Week 6)**: Unsupervised learning, dimensionality reduction
-
-Each checkpoint is offered twice (original + retake within 1 week); you keep your best
-result. **Dates**: scheduled during class time. TODO — calendar pending.
+Brief, closed-book, in-class derivation checks (~15–20 min, one derivation each) that
+**gate the project milestones** — see each project's docs for what gates what. Graded
+Satisfactory / Not-Yet; each is offered twice (original + retake) and you keep your best
+result. *Count and sitting weeks to be confirmed — proposed sittings in Weeks 2 and 5
+(per the [Syllabus](syllabus.qmd) §1.6). Dates: TODO — calendar pending.*
 
 ### Peer-Engagement Loops
 
-Six weekly loops (Weeks 1–6): complete the interactive tool, generate your token, post to
-D2L, review peers, integrate feedback. See [Activities](activities.qmd) for loop details.
+Six weekly loops — every week except Week 3 (the MLE module has no activity): complete the
+interactive tool, generate your token, post to D2L, review peers, integrate feedback. See
+[Activities](activities.qmd) for loop details.
 
 ### Prerequisite Quiz
 
