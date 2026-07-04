@@ -1,0 +1,317 @@
+---
+title: "Syllabus — INFO 521: Introduction to Machine Learning"
+page-layout: full
+---
+
+**[Term / Year — no dates per design]**  ·  **Modality/meeting pattern: [confirm — in-person / online-async / hybrid]**
+**Instructor: [posted per offering]**  ·  **[email]**
+
+::: {.callout-warning title="Confirm before publishing (bracketed throughout)"}
+Instructor of record + contact + office + office hours; TA (if any); term & modality;
+whether FCML / PML2 / IML remain as reference texts; final HW-unit and checkpoint counts
+(from the pacing decisions still open); and all UA policy wording — this syllabus *links* to
+the official UA templates rather than quoting them, so that language is never authored here.
+Assessment percentages reflect the approved redesign scheme; policy prose is adapted from the
+Fall 2025 INFO 521 syllabus (used with permission).
+:::
+
+---
+
+## 1 · Course Curriculum — what will we learn?
+
+### 1.1 Course Description
+Machine learning studies algorithms that adjust their internal parameters — that "learn" — to
+recognize patterns and make predictions from example data. This course introduces the
+foundations of machine learning and builds them into a single probabilistic arc: from fitting a
+model by minimizing **loss**, to estimating parameters by **likelihood**, to reasoning about them
+with a full **posterior**, to **approximating** inference when exact answers are out of reach, and
+finally to **discovering** structure without labels. Along the way students implement practical
+methods for regression, classification, clustering, and dimensionality reduction in Python, and
+learn to evaluate and communicate what those methods do — and where they fail — on real data.
+
+### 1.2 Expected Learning Outcomes
+
+**Course Learning Outcomes.** By the end of this course, students will be able to:
+
+- **CLO1.** Identify and evaluate machine-learning approaches appropriate for regression,
+  classification, clustering, and dimensionality-reduction problems.
+- **CLO2.** Implement machine-learning algorithms in Python using industry-standard tools and
+  workflows.
+- **CLO3.** Compare and interpret model performance using appropriate evaluation metrics,
+  validation techniques, and statistical reasoning.
+- **CLO4.** Apply machine-learning methods to real-world datasets to develop predictive and
+  descriptive models.
+- **CLO5.** Communicate machine-learning results, limitations, and recommendations through
+  written, visual, and technical presentations.
+
+**Course Objectives.**
+
+1. Introduce the core methods used in modern machine learning.
+2. Give students experience implementing these methods as algorithms in Python.
+3. Give students experience using and critically evaluating these methods on data.
+
+### 1.3 Program-level relevance
+
+**Competencies.** This course addresses the following College of Information Science competencies
+for the MS in Information Science and MS in Data Science programs:
+
+- **MS1 — Computational Thinking:** students exercise decomposition, pattern recognition,
+  abstraction, and algorithmic thinking.
+- **MS2 — Data Collection, Analysis, and Interpretation:** students collect, manipulate, and
+  analyze data at different scales and interpret the results properly.
+- **MS3 — Communication of Analytical Results:** students communicate their findings to
+  interdisciplinary audiences using appropriate visualizations and technical writing.
+
+**Other roles.** This course can serve as a core course for the MSIS Machine Learning subplan; a
+general elective for the MSIS Human-Centered Computing subplan; an elective for the MSDS program
+and the PhD in Information; and part of a PhD Minor in Information.
+
+### 1.4 Course Assessment Plan
+Assessment in this course is **specifications-based** ("specs grading"): work is evaluated against
+clear pass/revise criteria rather than partial-credit point-picking, and most components allow
+revision toward mastery. Two applied **projects** anchor the course; **homework units**, weekly
+**peer-engagement loops**, periodic **checkpoints**, and a **prerequisite quiz** support and assess
+the learning outcomes. See §3.1.3 for mechanics and its weights table; see the Course Schedule
+(§1.6) for when each lands.
+
+### 1.5 Course Topics
+The course is organized as seven modules along one arc — *loss → likelihood → posterior →
+approximation → discovery*:
+
+1. **Foundations & Linear Regression** — the linear model, least squares, the normal equations.
+2. **Learning Theory: Bias–Variance & Regularization** — model evaluation, cross-validation, the
+   bias–variance tradeoff, ridge regularization.
+3. **Probability, Likelihood & MLE** — probability review, the Gaussian, maximum likelihood,
+   Fisher information and parameter uncertainty.
+4. **Bayesian Inference** — priors, posteriors, conjugacy; the Beta–Binomial model; the conjugate
+   Gaussian posterior; ridge as MAP.
+5. **Approximate Inference & Bayesian Classification** — logistic regression and Newton's method;
+   the Laplace approximation; a taste of MCMC / Metropolis.
+6. **Support Vector Machines & Clustering** — max-margin classification and kernels (concept
+   level); K-means; Gaussian mixtures and EM.
+7. **Dimensionality Reduction (PCA)** — eigen-decomposition of the covariance matrix, variance
+   explained, projection, and the limits of linear methods.
+
+*(Neural networks are the natural continuation of this material and are covered in the sequel,
+INFO 557; they are not part of INFO 521.)*
+
+### 1.6 Course Schedule (week pacing — no fixed dates)
+One module per week over the accelerated term. Peer loops run every week except the MLE week
+(Module 3 has no activity). The two projects land on the arc's seams. Section numbers marked †
+are from the PML (2022) table of contents — verify against your printing.
+
+| Wk | Module & topic | Readings | Peer loop | Key work due |
+|----|----------------|----------|-----------|--------------|
+| 1 | M1 · Foundations & Linear Regression | PML Ch.1 (§1.1–1.3); MML Ch.2, Ch.9 | Least squares | Prerequisite quiz; HW Unit 1; **Project 1 assigned** |
+| 2 | M2 · Bias–Variance & Regularization | PML §4.7; PML §11.3†; MML Ch.5 | Bias–variance & ridge | HW Unit 2; *Checkpoint 1 (proposed)* |
+| 3 | M3 · Probability, Likelihood & MLE | PML Ch.2, Ch.3, §4.1–4.2, §4.7; MML Ch.6 | — | HW Unit 3 |
+| 4 | M4 · Bayesian Inference | PML §4.6; Think Bayes Ch.2, Ch.4; PML §11.7† | Bayesian updating | HW Unit 4; **Project 1 due** |
+| 5 | M5 · Approximate Inference & Classification | PML Ch.10 (§10.1–10.2), Ch.9; PML §4.6.8†; Think Bayes Ch.19 | Logistic regression | HW Unit 5; **Project 2 assigned**; *Checkpoint 2 (proposed)* |
+| 6 | M6 · SVM & Clustering | PML Ch.21 (§21.3–21.4); MML Ch.11 | K-means | HW Unit 6 |
+| 7 | M7 · Dimensionality Reduction (PCA) | MML Ch.4 (§4.2), Ch.10; PML Ch.20 (§20.1) | PCA | HW Unit 7 / capstone; **Project 2 due** |
+
+*Readings are assigned before each module (≈10–20 pages/module; see §2.5). Cross-validation
+(Wk 2) and SVMs (Wk 6) are treated at concept level in lecture. Reading links live on the
+[Schedule](schedule.qmd) page.*
+
+---
+
+## 2 · Course Information — what do we need to get started?
+
+### 2.1 Instructor information
+- **Instructor of record:** [posted per offering] · School of Information · [email] · [office]
+- **Teaching assistant:** [if any — name / email]
+
+### 2.2 Course communications
+- Announcements are posted on **D2L**; ask questions during class/office hours (§2.3) or by email.
+- Put **`[521]`** in the subject line of course email so we can find it quickly. Email the
+  instructor [and TA] together for the fastest response.
+
+**Response time.** We typically reply within one business day; we generally do not reply on
+weekends or university holidays. You'll be notified in advance of any scheduling issues that may
+affect response times.
+
+### 2.3 Office Hours
+Office hours are posted on the D2L course site under *Content / Course Admin*. **[Confirm times /
+format.]**
+
+### 2.4 Course Prerequisites
+- Calculus I–II (derivatives and integrals; MATH 129) and Linear Algebra (MATH 313).
+- Programming experience (at least three courses; the course language is **Python 3**).
+- Introduction to statistics and discrete/continuous probability (ISTA 311 recommended).
+
+If you are missing a prerequisite (or took it long ago) you may still succeed, but expect to put in
+additional effort — please use office hours. An early **prerequisite quiz** serves as a
+self-assessment for you and a calibration for the instructor. Multivariate calculus is helpful but
+not required; relevant concepts are introduced as needed.
+
+### 2.5 Course Format and Session Structure
+- **Modality:** [confirm — in-person / online-async / hybrid].
+- **Weekly rhythm:** each module delivers its lecture material (slides/notes, with interactive
+  in-lecture tools), an assigned reading, a **peer-engagement loop**, and a **homework unit**.
+- **Peer-engagement loops** run in four stages across the week: (1) work through the module's
+  interactive tool and pass its mastery check; (2) post a short reflection to your team's D2L
+  discussion; (3) give structured peer review to teammates; (4) respond and revise.
+- **Readings:** ≈10–20 pages before each module. Estimate ≈1 hour per 10 pages
+  (<https://cte.rice.edu/resources/workload-estimator>). Tell us if that estimate is off.
+- **Content:** lecture materials, external links, and textbook excerpts are posted on D2L; the
+  interactive activities are hosted online and also embedded in D2L.
+
+**2.5.1 Workload.** Plan on a **minimum of 5–6 hours per week** beyond scheduled lecture time.
+Students spending substantially more should come to office hours; feedback on workload is welcome.
+
+### 2.6 Required Resources and Equipment
+
+**2.6.1 Required texts.** All required texts are available at no cost. We refer to them by the
+acronyms below in the schedule and readings.
+
+| Acronym | Title | Author(s) |
+|---|---|---|
+| **PML** | Probabilistic Machine Learning: An Introduction (2022) | Kevin Murphy |
+| **MML** | Mathematics for Machine Learning | Deisenroth, Faisal & Ong |
+| **Think Bayes** | Think Bayes (2nd ed.) | Allen B. Downey |
+| **UDL** | Understanding Deep Learning | Simon J. D. Prince |
+
+*Notation follows **PML** throughout the course.* **[Confirm whether to retain FCML, PML2, and IML
+as optional reference texts, as in prior offerings.]**
+
+**2.6.2 Hardware and software.** You will need a computer with:
+
+- **Python 3** (3.11 recommended) and `pip` — <https://www.python.org>
+- **Git** and a **GitHub account** (assignments are distributed via GitHub Classroom) — <https://git-scm.com>
+- A **TeX distribution** (or Overleaf) for compiling PDFs — <https://www.ctan.org/starter>
+- Access to **D2L** for announcements, discussions, and embedded activities.
+
+No laptop? Borrow one from the library: <https://lib.arizona.edu/borrow/tech>.
+
+### 2.7 Student Success Resources
+- **UA resources** (accessibility & accommodations, campus safety, Campus Pantry, Campus Health,
+  CAPS, Dean of Students Student Assistance, Survivor Advocacy):
+  <https://catalog.arizona.edu/syllabus-policies>
+- **Think Tank** — math, writing, and general tutoring: <https://thinktank.arizona.edu>
+- **iSchool peer tutoring** — for course support, ask in the tutoring center's Slack `#general`
+  channel whether a tutor covers this course.
+
+---
+
+## 3 · Course Policies — what can we agree on to learn together?
+
+### 3.1 Progress and Completion
+
+**3.1.1 Participation.** Participation in this course means engaging in the weekly peer-engagement
+loops in good faith: completing the module activity, posting a substantive reflection on time, and
+giving your teammates constructive, respectful peer review. See the climate guidelines in §3.2.2.
+
+**3.1.2 Late work, revision, and missed assessments.** This course is built around revision, so the
+policies differ from a traditional exam course:
+
+- **Homework** and **project** work is specs-graded: submissions receive **Pass** or **Not-Yet**,
+  and Not-Yet work may be **revised and resubmitted** under the mechanics in §3.1.3. Automated
+  "correctness" checks may be resubmitted without limit; human-reviewed components use a limited
+  pool of revision tokens.
+- **Peer-loop** stages are time-bound within the week because they depend on teammates; missing a
+  stage cannot be made up after the loop closes, but the loop is a small (5%) component.
+- **Checkpoints** are brief, scheduled progress checks; see §3.1.3.
+- Documented medical and family emergencies are always accommodated — contact the instructor.
+
+**3.1.3 Grading.**
+
+*3.1.3.1 Categories and weights.*
+
+| Type | Category | Description | % |
+|---|---|---|---|
+| Summative | **Projects** (×2) | Two applied projects. *Project 1 — One Problem, Three Lenses:* one dataset through least squares, MLE, and a Bayesian posterior. *Project 2 — From Inference to Discovery:* approximate inference and classification through clustering and dimensionality reduction. | **55** |
+| Formative | **Homework** | Consolidated units of math + programming exercises, specs-graded with revision. | **30** |
+| Summative | **Checkpoints** | Brief progress checks across the term. *[Count/timing to confirm.]* | **9** |
+| Formative | **Peer-engagement loops** | Weekly tool + reflection + peer review + revise. | **5** |
+| Formative | **Prerequisite quiz** | Early self-assessment on course prerequisites. | **1** |
+
+*3.1.3.2 Specifications grading.* Each assignment lists explicit specifications; work that meets
+them earns a **Pass**, work that doesn't earns **Not-Yet** with feedback and a path to revise.
+Letter grades are earned by the **bundle** of work completed at the Pass level (an A–E ladder
+defined per component in the assignment's grading guide), not by accumulating partial credit.
+Autograded correctness may be resubmitted freely; human-reviewed revisions draw on a limited token
+pool, and a small independent-miss allowance keeps a single slip from cascading. Full mechanics are
+in each assignment's grading guide and the course `GRADING` reference.
+
+*3.1.3.3 Grading scale.*
+
+| Grade | Range |
+|---|---|
+| A | 90% ≤ cumulative |
+| B | 80% ≤ cumulative < 90% |
+| C | 70% ≤ cumulative < 80% |
+| D | 60% ≤ cumulative < 70% |
+| E | cumulative < 60% |
+
+*3.1.3.4 No "pre-grading."* The instructor will not review an entire assignment before the due date,
+but is glad to answer **specific** questions. For code, isolate the problem to a line or behavior
+first (use print statements!) and be ready to explain what you've already tried.
+
+*3.1.3.5 Grade appeals.* To contest a score, email a written explanation within one week of
+receiving feedback. After final letter grades post, follow the UA grade-appeal procedure:
+<https://catalog.arizona.edu/policy/courses-credit/grading/grade-appeal>.
+
+*3.1.3.6 Rounding.* Cumulative scores within 1% of a cutoff are rounded up (e.g., 89.5% → A) for
+students who have completed all assignments and loops, barring documented emergencies.
+
+*3.1.3.7 Scaling.* If assessments prove harder than intended, grades may be scaled — only ever
+**upward**, never down. Scaling is not guaranteed (and unlikely unless the class average is below a
+C), so proceed as if there will be none.
+
+### 3.2 Classroom Climate and Community Engagement
+
+**3.2.1 UA policies and student resources.** All UA courses adhere to the general UA policies:
+<https://catalog.arizona.edu/policies>. Links to the Threatening Behavior policy,
+Nondiscrimination and Anti-Harassment policy, Safety on Campus, and the Subject-to-Change statement
+are here: <https://catalog.arizona.edu/syllabus-policies>. **[Use the current official UA
+syllabus-policy language/links for the offering term.]**
+
+**3.2.2 Course climate and inclusion.** Students and instructors share responsibility for a safe,
+welcoming, inclusive environment where everyone can challenge themselves to succeed. Because much of
+this course runs through team peer review, be especially considerate in written feedback: critique
+the work, assume good faith, and give teammates specific, actionable, respectful comments. Disruptive
+or disrespectful conduct may be referred to the Dean of Students.
+
+**3.2.3 Academic integrity.** The UA Code of Academic Integrity
+(<https://deanofstudents.arizona.edu/policies/code-academic-integrity>) and the College of Information
+Science Academic Integrity Policy (<https://infosci.arizona.edu/students-and-career/academic-integrity>)
+apply to this course.
+
+*Not allowed:*
+
+- Using course-sharing sites (Chegg, Course Hero, OneClass, StuDocu, Numerade, etc.).
+- Copying text (one sentence or more) verbatim or inadequately paraphrased from any source; see
+  <https://lib.arizona.edu/research/write-cite/plagiarism>.
+- Copying solutions to homework or projects from online sources or from students who took the course
+  previously (including solutions posted to GitHub).
+- Having someone else do any part of your work.
+- Including figures you did not create yourself.
+- Modifying the provided automated tests to make an incorrect solution pass, or fabricating,
+  sharing, or reusing another student's peer-loop completion token.
+
+*Allowed:*
+
+- **Generative AI tools**, provided you **disclose** how you used them (you will not lose points for
+  disclosing). LLMs can hallucinate and reflect biases — you are responsible for verifying and
+  critically examining anything you submit. Do not enter confidential information into prompts.
+- **Collaboration** on homework, provided you name your collaborators in the submission and write up
+  the work **in your own words**. Genuine peer review of teammates' loop reflections is expected and
+  encouraged.
+- Getting writing help from the UA Writing Center: <https://thinktank.arizona.edu/writing-center>.
+
+*Citing sources.* Cite every resource you use — websites (with URLs), books, articles, and any human
+other than the instructors. Citing "Google" is not sufficient; cite the actual resource.
+
+*Source of truth.* This syllabus is the canonical source for the course's academic-integrity
+policies; if a verbal statement conflicts with it, the syllabus governs. If a policy is unclear or
+has a loophole, tell the instructor; fixes are not applied retroactively.
+
+*Sanctions.* Plagiarism is reported to the Dean of Students with sanctions commensurate with
+severity; the typical sanction is a failing grade in the course.
+
+---
+
+*Policy and resource language adapted, with permission, from the Fall 2025 INFO 521 syllabus.
+Assessment structure, learning outcomes, competencies, topics, and schedule reflect the current
+course redesign.*
