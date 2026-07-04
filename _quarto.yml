@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  # Open-licensed reading excerpts (PML/UDL) served alongside the site;
+  # linked from schedule.qmd's Readings column.
+  resources:
+    - readings
 
 website:
   title: "INFO 521 — Machine Learning Foundations"
