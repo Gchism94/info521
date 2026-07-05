@@ -17,7 +17,7 @@ The schedule below maps each module to its slides, activity loop, and assessment
 | 6 | **SVM & Clustering** | [Module 6]({{< var slides_url >}}/modules/m6-svm-clustering/) | [week05-kmeans]({{< var activities_url >}}/week05-kmeans/) | [PML §21.3–21.4 (k-means, GMM/EM)](readings/PML_Wk5_Ch21_KMeans_and_Mixtures_s21.3-21.4.pdf); [MML](https://mml-book.github.io/) Ch. 11 — SVM lecture-only (optional pointer: [PML §17.3](https://probml.github.io/pml-book/book1.html)) | Checkpoint 5 — k-means/PCA (TODO) |
 | 7 | **PCA** | [Module 7]({{< var slides_url >}}/modules/m7-pca/) | [week06-pca]({{< var activities_url >}}/week06-pca/) | [MML](https://mml-book.github.io/) §4.2 (eigendecomposition) & Ch. 10 (PCA); [PML §20.1 (secondary)](readings/PML_Wk6_Ch20_PCA_s20.1.pdf) | Checkpoint retakes conclude; **Project 2 due (TODO)** |
 
-*(Activity slugs are week-named and land one week after their module opens from Module 4 on — modules ≠ weeks. Module 3 has no activity; a parameter-uncertainty tool is a future build. Cross-validation (M2) is lecture-only — no assigned reading.)*
+*(Activity slugs are week-named and land one week after their module opens from Module 4 on — modules ≠ weeks. Module 3 has no peer loop — its [parameter-uncertainty demo](https://gchism94.github.io/info521-activities-2026/m3-parameter-uncertainty/) is used in lecture, not as a loop. Cross-validation (M2) is lecture-only — no assigned reading.)*
 
 **Where next (optional — not a module, no assessment):** Neural networks ([UDL Ch. 2–3](readings/UDL_Wk7_Ch2-3_Neural-Networks_pp31-54.pdf), [Ch. 6–7](readings/UDL_Wk7_Ch6-7_Training-Backprop_pp91-131.pdf)) continue in INFO 557.
 

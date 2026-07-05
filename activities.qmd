@@ -34,8 +34,9 @@ All tools are **buildless static HTML** — open them directly in your browser, 
 | Week 6 | M6 | [k-means Clustering]({{< var activities_url >}}/week05-kmeans/) | Initialize and run k-means on 2D data. Quiz on centroid assignment, convergence, and cluster validity. |
 | Week 7 | M7 | [Principal Component Analysis]({{< var activities_url >}}/week06-pca/) | Rotate to principal components and visualize variance explained. Quiz on eigendecomposition and dimensionality reduction. |
 
-**Week 3 (MLE & Parameter Uncertainty)** has no loop — a written reflection stands in
-(a parameter-uncertainty tool is a future build).
+**Week 3 (MLE & Parameter Uncertainty)** has no loop — a written reflection stands in.
+(The [parameter-uncertainty demo](https://gchism94.github.io/info521-activities-2026/m3-parameter-uncertainty/)
+is embedded in the m3b lecture — an in-lecture demo, not a loop.)
 
 ---
 
