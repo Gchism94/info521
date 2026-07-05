@@ -111,8 +111,7 @@ Same dataset, now tasked with discovering structure:
 
 Synthesis question: What story does the data tell when you stop presuming its structure?
 
-**Submission**: GitHub Classroom. See [GitHub Classroom]({{< var classroom_url >}}) for the
-invite link.
+**Submission**: GitHub Classroom (the invite link is posted on D2L at term start).
 
 ### Checkpoints
 

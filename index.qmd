@@ -5,14 +5,21 @@ page-layout: full
 
 ## Course Overview
 
-INFO 521 is a 7.5-week graduate course covering the foundations of machine learning, from classical linear regression through neural networks. Taught by **Greg Chism**, this course emphasizes both theoretical understanding and practical application, combining interactive peer-engagement loops with projects that integrate the full learning arc.
+INFO 521 is a 7.5-week graduate course covering the foundations of machine learning along
+one arc — **loss → likelihood → posterior → approximation → discovery** — from classical
+linear regression through Bayesian inference to clustering and PCA, all on a single
+clinical dataset (NHANES). The course emphasizes both theoretical understanding and
+practical application, combining interactive peer-engagement loops with projects that
+integrate the full learning arc. *(Neural networks continue in the sequel, INFO 557.)*
 
 :::{.grid}
 
 :::{.g-col-12 .g-col-md-4}
 ### Slides
 
-Lecture decks in reveal.js with dark/light toggle and PDF export. Topics span foundations, learning theory, Bayesian methods, model selection, and neural networks.
+Fourteen reveal.js decks across seven modules — linear models, generalization, MLE,
+Bayesian inference, approximate inference, SVM & clustering, and PCA — with dark/light
+toggle and a PDF alongside every deck.
 
 [Browse Slides →](slides.qmd)
 :::
@@ -20,7 +27,7 @@ Lecture decks in reveal.js with dark/light toggle and PDF export. Topics span fo
 :::{.g-col-12 .g-col-md-4}
 ### Activities
 
-Six weekly peer-engagement loops: interactive tool + mastery quiz → reflection → peer review → revise. Each tool is a self-contained visualization with a retakeable quiz.
+Six weekly peer-engagement loops: interactive tool + built-in mastery check → reflection → peer review of every teammate → respond & revise. Each tool is a self-contained visualization with a retakeable quiz.
 
 [Explore Activities →](activities.qmd)
 :::
@@ -28,7 +35,7 @@ Six weekly peer-engagement loops: interactive tool + mastery quiz → reflection
 :::{.g-col-12 .g-col-md-4}
 ### Assessment
 
-Specifications grading — no points, no weighted averages. Eight pass/not-yet deliverables (7 homework units + a Capstone) set your letter on a published ladder; revise-and-resubmit is built in.
+Specifications grading — every assignment is pass/not-yet with revise-and-resubmit built in, never partial credit. Components combine by published weights: Projects 55% · Homework 30% · Checkpoints 9% · Peer loops 5% · Prereq quiz 1%.
 
 [See Grading Scheme →](assessment.qmd)
 :::
@@ -37,7 +44,8 @@ Specifications grading — no points, no weighted averages. Eight pass/not-yet d
 
 ## Schedule
 
-The course follows a **module-by-module schedule**, each pairing slides with hands-on activities. Review the full schedule and see what's in progress:
+The course follows a **module-by-module schedule** — one module per week, each pairing
+slides, readings, and a hands-on activity loop:
 
 [Module Schedule →](schedule.qmd)
 
@@ -45,6 +53,7 @@ The course follows a **module-by-module schedule**, each pairing slides with han
 
 ## Key Resources
 
-- **Homeworks**: Practice problems deployed via [GitHub Classroom]({{< var classroom_url >}})
-- **Projects**: Clinical dataset carries the semester arc across two projects
-- **Checkpoints**: Retakeable assessments covering key concepts
+- **[Syllabus](syllabus.qmd)**: the full course policies — also as a [PDF](syllabus.pdf)
+- **[Homeworks](homeworks.qmd)**: eight specs-graded deliverables, distributed via GitHub Classroom (invite link posted on D2L at term start)
+- **Projects**: one clinical dataset carries the semester arc across two projects — *One Problem, Three Lenses* (due Wk 4) and *From Inference to Discovery* (due Wk 7)
+- **Checkpoints**: five short, retakeable derivation checks (Weeks 2–6) that gate the project milestones
