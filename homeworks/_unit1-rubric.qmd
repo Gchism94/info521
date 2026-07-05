@@ -11,7 +11,7 @@ PASS rule: **every MUST-MEET spec met, and ≤ 1 missed among the independent sp
 | **A1** scalar closed-form `w0,w1` (rel 1e-3) | hw1 | `test_scalar_closed_form` | MUST-MEET (foundation) |
 | **A2** scalar residuals ⟂ `1`,`x` (normal eqns) | hw1 | `test_scalar_normal_equations` | independent |
 | **A3** scalar beats mean-baseline (floor-AND-guard) | hw1 | `test_scalar_beats_baseline` | MUST-MEET |
-| **B1** matrix order-1 **==** scalar fit @2012 (through-line) | hw2 | `test_matrix_order1_matches_scalar` | MUST-MEET (ties A↔B) |
+| **B1** matrix order-1 **==** scalar fit \@2012 (through-line) | hw2 | `test_matrix_order1_matches_scalar` | MUST-MEET (ties A↔B) |
 | **B2** matrix residuals ⟂ design columns | hw2 | `test_matrix_normal_equations` | independent |
 | **C1** `scale` maps to [0,1] | hw3 | `test_scale_is_unit_range` | independent |
 | **C2** `scale` is affine-invertible | hw3 | `test_scale_is_affine_recoverable` | independent |
