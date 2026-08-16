@@ -20,8 +20,9 @@ PASS rule: **every MUST-MEET spec met, and ≤ 1 missed among the independent sp
 | **C5** CV return contract (length-P, finite, ≥0) | hw3 | `test_cv_returns_per_order_losses` | MUST-MEET (CV must run) |
 | **C6** LOOCV runs | hw3 | `test_loocv_runs` | independent |
 | **C7** CV penalizes overfitting (floor-AND-guard) | hw3 | `test_cv_penalizes_overfitting` | MUST-MEET (the O4 outcome) |
+| **C8** rank-deficiency probe: duplicated column, both solve routes raise `LinAlgError`, behaviours reported *(new: merged from Checkpoint 1.1)* | CP 1.1 | `test_rank_deficiency_probe` | independent |
 
-7 MUST-MEET + 5 independent (miss-threshold ≤ 1).
+7 MUST-MEET + 6 independent (miss-threshold ≤ 1).
 
 ### Bundle 2 — Interpretation  (rubric; LLM-pre-grade + human-confirm)
 

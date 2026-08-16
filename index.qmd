@@ -27,7 +27,7 @@ toggle and a PDF alongside every deck.
 :::{.g-col-12 .g-col-md-4}
 ### Activities
 
-Six weekly peer-engagement loops: interactive tool + built-in mastery check → reflection → peer review of every teammate → respond & revise. Each tool is a self-contained visualization with a retakeable quiz.
+Weekly peer-engagement loops: interactive tool + built-in mastery check → discussion post → peer review of every teammate → respond & revise. Module 3's written discussion carries its loop alone, and Week 5 runs tool-only because it is the project midpoint.
 
 [Explore Activities →](activities.qmd)
 :::
@@ -35,7 +35,7 @@ Six weekly peer-engagement loops: interactive tool + built-in mastery check → 
 :::{.g-col-12 .g-col-md-4}
 ### Assessment
 
-Specifications grading — every assignment is pass/not-yet with revise-and-resubmit built in, never partial credit. Components combine by published weights: Projects 55% · Homework 30% · Checkpoints 9% · Peer loops 5% · Prereq quiz 1%.
+Specifications grading — every assignment is pass/not-yet with revise-and-resubmit built in, never partial credit. Components combine by published weights: Projects 55% · Homework 25% · Peer loops & discussions 10% · Checkpoints 9% · Prereq quiz 1%.
 
 [See Grading Scheme →](assessment.qmd)
 :::
@@ -54,6 +54,6 @@ slides, readings, and a hands-on activity loop:
 ## Key Resources
 
 - **[Syllabus](syllabus.qmd)**: the full course policies — also as a [PDF](syllabus.pdf)
-- **[Homeworks](homeworks.qmd)**: eight specs-graded deliverables, distributed via GitHub Classroom (invite link posted on D2L at term start)
+- **[Homeworks](homeworks.qmd)**: eight specs-graded deliverables, distributed via Classroom 50 (invite link posted on D2L at term start)
 - **Projects**: one clinical dataset carries the semester arc across two projects — *One Problem, Three Lenses* (due Wk 4) and *From Inference to Discovery* (due Wk 7)
-- **Checkpoints**: five short, retakeable derivation checks (Weeks 2–6) that gate the project milestones
+- **Checkpoints**: five short, open-book D2L quizzes (Weeks 2–6), each gating the project milestone due the following week

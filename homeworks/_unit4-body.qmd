@@ -29,6 +29,10 @@ Three parts:
 - **(B) The coin-game posterior** *(code)* — with a Beta$(a,b)$ prior on the bias and $y_N$
   heads in $N$ tosses, compute the exact conjugate posterior
   $\text{Beta}(a+y_N,\,b+N-y_N)$, its marginal likelihood, and the probability of winning.
+- **(B+) The grid check** *(code, merged from Checkpoint 1.3)* — evaluate the unnormalized
+  posterior (prior × likelihood) on a grid of $r$, normalize it, and confirm it matches the
+  closed-form Beta density with your updated parameters. If your Part B parameters are right,
+  the curves coincide; the derivation they verify is the Week 4 checkpoint quiz.
 - **(C) Inverse-Gamma conjugacy** *(derivation)* — derive the posterior parameters for the
   noise variance.
 
@@ -71,8 +75,8 @@ in [`GRADING.md`]({{< var grading_url >}}).
 
 ## Deadline & revision window
 
-- Due: **[PLACEHOLDER]**
-- Post-feedback revision window: **[PLACEHOLDER]**
+- Due: **Week 4** (week pacing; this term runs 7 weeks with no fixed calendar dates)
+- Post-feedback revision window: **the following week**
 
 ## Estimated effort
 

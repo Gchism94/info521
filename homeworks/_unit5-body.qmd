@@ -47,7 +47,7 @@ Gaussian prior and conjugacy ideas from Unit 4; gradients and optimization; seed
 > This is where the threads meet: the **Hessian uses Unit 2b's identity A3**, the prior on
 > $\sigma^2$ comes from **Unit 4**, and the MCMC sampling extends **Unit 3's** estimate-by-drawing
 > idea. The MAP → Laplace → MCMC progression is the spine of approximate inference and the
-> toolkit you'll draw on in the **Capstone**.
+> toolkit you'll draw on in **Part 2 of the project**.
 
 ## How it's graded
 
@@ -72,8 +72,8 @@ unlimited until the deadline. Full policy in [`GRADING.md`]({{< var grading_url 
 
 ## Deadline & revision window
 
-- Due: **[PLACEHOLDER]**
-- Post-feedback revision window: **[PLACEHOLDER]**
+- Due: **Week 5** (week pacing; this term runs 7 weeks with no fixed calendar dates)
+- Post-feedback revision window: **the following week**
 
 ## Estimated effort
 

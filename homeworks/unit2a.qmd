@@ -2,7 +2,33 @@
 title: "Unit 2a — Probability & Estimation Foundations (I)"
 subtitle: "Poisson probabilities · Bernoulli MLE · Fisher information"
 page-layout: full
+format:
+  html: default
+  typst:
+    papersize: us-letter
+    margin:
+      x: 1in
+      y: 1in
+    fontsize: 10.5pt
+    toc: true
+    toc-depth: 3
+    include-in-header:
+      - text: |
+          #set text(font: ("Helvetica Neue", "Helvetica", "Arial"))
+          #show heading.where(level: 1): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 2): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 3): set text(fill: rgb("#205a80"))
+          #show link: set text(fill: rgb("#AB0520"))
+  docx:
+    reference-doc: ../reference.docx
+    toc: true
+    toc-depth: 3
+format-links: [typst, docx]
 ---
+
+::: {.content-visible when-format="html"}
+[Download this page as a PDF](unit2a.pdf)
+:::
 
 {{< include _unit2a-body.qmd >}}
 

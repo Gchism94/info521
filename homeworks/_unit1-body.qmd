@@ -31,6 +31,11 @@ You'll fit the Olympic 100 m data three ways, each deepening the last:
   $\mathbf{X} = [\,\mathbf{1}\ \ \mathbf{x}\,]$. At order 1 it **must agree with Part A
   exactly** (both predict ≈ **9.59 s** for 2012) — that agreement is the through-line that
   ties the unit together.
+- **(B+) The rank-deficiency probe** *(merged from Checkpoint 1.1)* — duplicate a column of
+  your design matrix so $\mathbf{X}^\top\mathbf{X}$ loses full rank, run the solve route and
+  the explicit-inverse route on it, catch the `LinAlgError`, and report which route fails
+  how. This is the numerical half of the normal-equations checkpoint; the derivation half is
+  the Week 2 checkpoint quiz.
 - **(C) Polynomial features + cross-validation** — add higher-order columns, scale to
   $[0, 1]$, and let **5-fold cross-validation** choose the order (scaling each fold *after*
   the split, so no information leaks).
@@ -79,8 +84,8 @@ are unlimited until the deadline. The full policy and the letter-grade ladder ar
 
 ## Deadline & revision window
 
-- Due: **[PLACEHOLDER]**
-- Post-feedback revision window: **[PLACEHOLDER]**
+- Due: **Week 1** (week pacing; this term runs 7 weeks with no fixed calendar dates)
+- Post-feedback revision window: **the following week**
 
 ## Estimated effort
 

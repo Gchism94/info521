@@ -1,7 +1,33 @@
 ---
 title: "Assessment & Grading"
 page-layout: full
+format:
+  html: default
+  typst:
+    papersize: us-letter
+    margin:
+      x: 1in
+      y: 1in
+    fontsize: 10.5pt
+    toc: true
+    toc-depth: 3
+    include-in-header:
+      - text: |
+          #set text(font: ("Helvetica Neue", "Helvetica", "Arial"))
+          #show heading.where(level: 1): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 2): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 3): set text(fill: rgb("#205a80"))
+          #show link: set text(fill: rgb("#AB0520"))
+  docx:
+    reference-doc: reference.docx
+    toc: true
+    toc-depth: 3
+format-links: [typst, docx]
 ---
+
+::: {.content-visible when-format="html"}
+[Download this page as a PDF](assessment.pdf)
+:::
 
 ## How Grading Works — Specifications Grading
 
@@ -12,27 +38,28 @@ your work meets all of them, it passes. If it doesn't yet, you get specific feed
 averaged down for an early attempt. Within each component the path to the grade you want is
 simply to meet the standards on more of the work — no partial credit, no curving inside an
 assignment. The components combine into the course grade by the weights in the
-[Syllabus](syllabus.qmd) (§3.1.3): **Projects 55% · Homework 30% · Checkpoints 9% ·
-Peer-engagement loops 5% · Prerequisite quiz 1%**.
+[Syllabus](syllabus.qmd) (§3.1.3): **Projects 55% · Homework 25% · Peer-engagement loops &
+discussions 10% · Checkpoints 9% · Prerequisite quiz 1%**.
 
 This page details the **Homework component** (its deliverables, bundles, revise budget, and
 ladder) and summarizes the other components.
 
 ---
 
-## Homework: The 8 Deliverables
+## Homework: The 7 Deliverables, Best 5 Count
 
-The homework component (30%) is **8 deliverables**, each pass / not-yet:
+The homework component (25%) is **7 deliverables**, each pass / not-yet, with a built-in
+**drop**: only your best five core units count, so one core unit can be skipped or missed
+without touching your homework letter.
 
 - **U0 — Tooling & Reproducibility** — the onboarding **completion floor**. It doesn't by
   itself raise your letter, but every grade above E requires it.
-- **Six core units** — **U1, U2a, U2b, U3, U4, U5** — the rungs of the ladder.
-- **Capstone** — independent synthesis: choose a model, fit it, quantify uncertainty by a
-  valid Bayesian method, and report results + ethics.
+- **Six core units** — **U1, U2a, U2b, U3, U4, U5** — the rungs of the ladder; the best
+  five count.
 
 Unit-by-unit descriptions, objectives, and rubrics are posted in **D2L** (the units are
 summarized on the [Homeworks](homeworks.qmd) page). Assignment materials — starter code,
-autograder, data — are distributed via **GitHub Classroom**; submissions are pushed to your
+autograder, data — are distributed via **Classroom 50**; submissions are pushed to your
 private repo, visible only to you and the instructor.
 
 ### What it takes to pass a unit
@@ -56,14 +83,14 @@ passed in every case above E.**
 
 | Letter | Requirement |
 |--------|-------------|
-| **A** | all 6 core units **and** the Capstone |
-| **B** | all 6 core units, **or** 5 core + Capstone |
-| **C** | 5 core units, **or** 4 core + Capstone |
-| **D** | 4 core units |
-| **E** | 3 or fewer core units, **or** U0 not passed |
+| **A** | any **5** core units |
+| **B** | 4 core units |
+| **C** | 3 core units |
+| **D** | 2 core units |
+| **E** | 1 or fewer core units, **or** U0 not passed |
 
-The Capstone **gates the A** and is otherwise worth one core unit of lift at the B/C
-boundaries — capped, so it can never substitute for full core coverage on the way to an A.
+The drop is automatic: with six core units and five rungs to the A, the lowest (or skipped)
+unit simply does not count. There is nothing to declare.
 
 ---
 
@@ -75,22 +102,23 @@ boundaries — capped, so it can never substitute for full core coverage on the 
   course-wide pool of 3 tokens** for a second human-bundle revision on the units you find
   hardest.
 
-**Dates** (deadlines and post-feedback revision windows): TODO — calendar pending.
+**Dates**: week pacing; this term runs 7.5 weeks with no fixed calendar dates. Deadlines and post-feedback revision windows are posted per offering on D2L.
 
 ---
 
 ## Other Course Components
 
-*Weights per the [Syllabus](syllabus.qmd) §3.1.3: Projects **55%**, Checkpoints **9%**,
-Peer-engagement loops **5%**, Prerequisite quiz **1%**. Each is specs-graded internally
+*Weights per the [Syllabus](syllabus.qmd) §3.1.3: Projects **55%**, Peer-engagement loops &
+discussions **10%**, Checkpoints **9%**, Prerequisite quiz **1%**. Each is specs-graded internally
 (pass / not-yet with revision where the format allows).*
 
-### Projects
+### Projects {#projects}
 
-Two integrative projects replace traditional midterm and final exams. Each synthesizes
-multiple weeks of the course arc.
+**One project** replaces traditional midterm and final exams: two parts on one clinical
+dataset, nine milestones, gated by the checkpoint quizzes. Part 1 is due **Week 5 (the
+midpoint)**; Part 2 closes at **Week 7.5**.
 
-**Project 1: "One Problem, Three Lenses"** — *Assigned Week 1 · due Week 4 (TODO — calendar TBD)*
+**Part 1: "One Problem, Three Lenses"** — *Assigned Week 1 · due Week 5, the midpoint*
 
 Use a single regression problem with a clinical dataset. Solve it three ways:
 
@@ -100,7 +128,7 @@ Use a single regression problem with a clinical dataset. Solve it three ways:
 
 Synthesis question: How do the three approaches diverge and converge? What assumptions differ?
 
-**Project 2: "From Inference to Discovery"** — *Assigned Week 5 · due Week 7 (TODO — calendar TBD)*
+**Part 2: "From Inference to Discovery"** — *Begins at the midpoint · due Week 7.5*
 
 Same dataset, now tasked with discovering structure:
 
@@ -111,29 +139,62 @@ Same dataset, now tasked with discovering structure:
 
 Synthesis question: What story does the data tell when you stop presuming its structure?
 
-**Submission**: GitHub Classroom (the invite link is posted on D2L at term start).
+#### How a project is judged
+
+Each milestone lists its **Satisfactory criteria at the top of its own notebook**. All criteria
+must be met: it is all-or-nothing, never partial credit. A **Not-Yet** returns with targeted
+feedback and **one revise cycle** back to Satisfactory. A project is complete when all its
+milestones are Satisfactory and all its gating checkpoints are passed.
+
+Part 2 is cumulative but not weighted more heavily than Part 1, because specs grading
+already requires that Part 2 mastery presupposes Part 1's foundations.
+
+#### Bundles and gates
+
+**Part 1** is Satisfactory when 1.1, 1.2, 1.3, and 1.4 are all Satisfactory and Checkpoint
+quizzes 1.1, 1.2, and 1.3 are passed. The structured project is complete when both parts
+are.
+
+**Part 2** is organized as two thematic gates plus the synthesis:
+
+| Bundle | Requires | Gated by |
+|---|---|---|
+| **Gate A** — Supervised | 2.1 (approximate inference) **and** 2.2 (classification) Satisfactory | Checkpoint quiz 2.1 |
+| **Gate B** — Unsupervised | 2.3 (clustering) **and** 2.4 (dimensionality reduction) Satisfactory | Checkpoint quiz 2.3 |
+| **Synthesis** | 2.5 Satisfactory | structured peer review |
+
+There is no separate checkpoint for 2.2 or 2.4: each gate carries one checkpoint covering the
+pair.
+
+**Submission**: Classroom 50 (the invite link is posted on D2L at term start).
 
 ### Checkpoints
 
-**Five** brief, closed-book, in-class derivation checks (~15–20 min, one derivation each)
-that **gate the project milestones**. One sitting per week, Weeks 2–6, each covering the
-module just taught; each is offered twice (original + an alternate-version retake the
-following week — retakes conclude in Week 7) and you keep your best result. Graded
-Satisfactory / Not-Yet.
+**Five** short open-book **D2L quizzes** (about 20 to 30 minutes each) on each module's
+derivations, and they **gate the project milestones**: each quiz is due the week its module is
+taught, and the milestone it gates is due the following week. Most items auto-grade on
+submission; each quiz also carries two or three short written responses graded
+Satisfactory / Not-Yet with one revision.
 
-| Sitting | Checkpoint | Gates |
+The coding verification that used to sit beside these derivations moved to where the code
+already lives. Homework Units 1, 3, and 4 carry the checkpoint 1.1, 1.2, and 1.3
+verification exercises; the 2.1 and 2.3 verifications were already required inside
+milestones 2.1, 2.3, and 2.4. Homework certifies that your implementations work; the
+project grades what you do with them on the clinical cohort. Nothing is assessed twice.
+
+| Quiz due | Checkpoint | Gates |
 |---|---|---|
-| Week 2 | 1 — Normal equations | Project 1.1 |
-| Week 3 | 2 — MLE | Project 1.2 |
-| Week 4 | 3 — Identify the conjugate posterior | Project 1.3 |
-| Week 5 | 4 — Newton–Raphson update | Project 2 · Gate A |
-| Week 6 | 5 — k-means objective & PCA | Project 2 · Gate B |
+| Week 2 | 1.1 — Normal equations | Milestone 1.1 (Wk 3) |
+| Week 3 | 1.2 — MLE for the weights | Milestone 1.2 (Wk 4) |
+| Week 4 | 1.3 — Identify the conjugate posterior | Milestone 1.3 (Wk 5) |
+| Week 5 | 2.1 — Newton–Raphson update | Milestone 2.1 (Wk 6) · Gate A |
+| Week 6 | 2.3 — k-means objective & PCA | Milestone 2.3 (Wk 7) · Gate B |
 
-*Dates: TODO — calendar pending.*
+*Week pacing; this term runs 7.5 weeks with no fixed calendar dates.*
 
 ### Peer-Engagement Loops
 
-Six weekly loops — every week except Week 3 (the MLE module has no activity). Each loop:
+A loop runs every week. Week 3 has no tool, so its written discussion carries the loop alone; Week 5 has no discussion (it is the project midpoint), so its loop is the tool and mastery check alone. Each full loop:
 complete the interactive tool and pass its built-in mastery check (the loop's knowledge
 check), post your reflection + token to your team's D2L discussion, give peer review to
 **every member of your team**, then respond to the reviews on your post and revise.
@@ -142,5 +203,15 @@ check), post your reflection + token to your team's D2L discussion, give peer re
 
 ### Prerequisite Quiz
 
-A brief diagnostic (administered Week 1) on linear algebra and probability fundamentals.
-Most students pass; it exists to surface gaps early, not to gatekeep.
+A brief diagnostic (Week 1, 20 minutes, closed book, 33 points) on the three course
+prerequisites: **univariate calculus** (derivatives of composed functions, definite
+integrals), **linear algebra** (transposes, matrix dimensions and validity of products,
+inner products), and **basic Python and command line** (a short function, a few shell
+invocations). You write your answers out and show your work on the math, typed into the
+answer box or attached as a photo or scan of handwritten work, so credit is awarded rule
+by rule rather than on the final answer alone.
+
+It exists to surface gaps early, not to gatekeep: most students pass, and the score is
+worth 1%. A description document posted on D2L beside the quiz lists every skill tested,
+section by section, with review resources for each, so a low score comes with a concrete
+plan.

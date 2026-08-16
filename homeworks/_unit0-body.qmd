@@ -1,7 +1,7 @@
 ## Overview
 
 Before any modelling, you need a pipeline that just works. Unit 0 gets you set up
-end-to-end — clone the repo from GitHub Classroom, run the autograder with `pytest`, fill in a
+end-to-end — clone the repo from Classroom 50, run the autograder with `pytest`, fill in a
 function behind the SOLUTION markers, render the unit, and commit and push. Nothing here is
 conceptually hard; the goal is a working toolchain and one habit — **seed every random number
 generator** — that every later unit assumes.
@@ -26,7 +26,7 @@ Work through four small setup tasks:
   **seed policy** in one line.
 - **(3)** Complete the onboarding exercise — the power-rule derivative
   $\frac{d}{dx}x^n = n\,x^{n-1}$ and the syllabus / academic-integrity checklist.
-- **(4)** Clone, commit, and push through GitHub Classroom, leaving the `### SOLUTION ###`
+- **(4)** Clone, commit, and push through Classroom 50, leaving the `### SOLUTION ###`
   markers intact.
 
 There is no model to build and nothing to interpret here — just a pipeline that runs clean.
@@ -57,14 +57,14 @@ by itself raise your letter, but every grade above E depends on it. See
   left in place.
 - Your **onboarding work** — the power-rule derivative and the ticked week-1 checklist, in the
   rendered unit.
-- Your **pushed repository** — committed and pushed through GitHub Classroom.
+- Your **pushed repository** — committed and pushed through Classroom 50.
 
 *Submit via the course page — [submit mechanism TBD].*
 
 ## Deadline & revision window
 
-- Due: **[PLACEHOLDER]**
-- Post-feedback revision window: **[PLACEHOLDER]**
+- Due: **Week 1** (week pacing; this term runs 7 weeks with no fixed calendar dates)
+- Post-feedback revision window: **the following week**
 
 ## Estimated effort
 

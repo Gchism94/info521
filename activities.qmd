@@ -5,13 +5,13 @@ page-layout: full
 
 ## The Peer-Engagement Loop Model
 
-Instead of worksheets and traditional quizzes, INFO 521 uses a four-stage **peer-engagement loop** each week:
+Instead of worksheets and traditional quizzes, INFO 521 uses a four-stage **peer-engagement loop** each week. Six of the seven weeks carry an interactive tool, and six carry a [discussion](discussions.qmd): Week 3 has no tool (its discussion carries the loop alone) and Week 5 has no discussion (it is the project midpoint, so the tool runs as lecture support).
 
 1. **Interactive Tool + Mastery Quiz** — An interactive D3 visualization paired with a retakeable, randomized quiz. Reaching ≥80% reveals a **completion token** (honor-evidence, not cryptographically signed).
 
-2. **Reflection Post** — Paste your token into a D2L discussion and reflect on what you learned, what surprised you, or what confused you.
+2. **Discussion Post** — Paste your token into your team's D2L discussion and answer that week's published prompt. Your post must make a claim, support it with a concrete result from your own work that week, state your reasoning, and name one limit.
 
-3. **Peer Review** — Review **every member of your team's** reflection using a 3-part rubric: clarity, insight, and integration.
+3. **Peer Review** — Respond to **every member of your team**, one response each. A response must engage a specific claim in your teammate's post, then extend it, challenge it with a stated reason, or connect it to other work. Agreement without addition does not earn credit.
 
 4. **Respond & Revise** — Reply to the reviews on your own post and integrate the feedback into a revised reflection. **A loop earns credit only when all stages are complete — including replies to all of your teammates.**
 
@@ -34,7 +34,9 @@ All tools are **buildless static HTML** — open them directly in your browser, 
 | Week 6 | M6 | [k-means Clustering]({{< var activities_url >}}/week05-kmeans/) | Initialize and run k-means on 2D data. Quiz on centroid assignment, convergence, and cluster validity. |
 | Week 7 | M7 | [Principal Component Analysis]({{< var activities_url >}}/week06-pca/) | Rotate to principal components and visualize variance explained. Quiz on eigendecomposition and dimensionality reduction. |
 
-**Week 3 (MLE & Parameter Uncertainty)** has no loop — a written reflection stands in.
+**Week 3 (MLE & Parameter Uncertainty)** has no *tool*. It still has a loop: that week's
+[discussion](discussions.qmd#d3) carries it on its own, and is held to a higher standard because of
+it.
 (The [parameter-uncertainty demo](https://gchism94.github.io/info521-activities-2026/m3-parameter-uncertainty/)
 is embedded in the m3b lecture — an in-lecture demo, not a loop.)
 

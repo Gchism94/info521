@@ -20,6 +20,10 @@ website:
         text: Slides
       - href: activities.qmd
         text: Activities
+      - href: discussions.qmd
+        text: Discussions
+      - href: projects.qmd
+        text: Projects
       - href: homeworks.qmd
         text: Homeworks
       - href: assessment.qmd
@@ -30,7 +34,7 @@ website:
         aria-label: "GitHub"
   page-footer:
     left: |
-      © 2026 University of Arizona School of Information
+      © 2026 University of Arizona College of Information Science
     right: |
       Built with [Quarto](https://quarto.org/)
 
@@ -40,4 +44,4 @@ format:
     toc: true
     page-footer:
       left: |
-        © 2026 University of Arizona School of Information
+        © 2026 University of Arizona College of Information Science

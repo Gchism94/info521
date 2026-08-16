@@ -1,0 +1,198 @@
+---
+title: "Weekly Discussions"
+page-layout: full
+format:
+  html: default
+  typst:
+    papersize: us-letter
+    margin:
+      x: 1in
+      y: 1in
+    fontsize: 10.5pt
+    toc: true
+    toc-depth: 3
+    include-in-header:
+      - text: |
+          #set text(font: ("Helvetica Neue", "Helvetica", "Arial"))
+          #show heading.where(level: 1): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 2): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 3): set text(fill: rgb("#205a80"))
+          #show link: set text(fill: rgb("#AB0520"))
+  docx:
+    reference-doc: reference.docx
+    toc: true
+    toc-depth: 3
+format-links: [typst, docx]
+---
+
+::: {.content-visible when-format="html"}
+[Download this page as a PDF](discussions.pdf)
+:::
+
+## How these work
+
+Six of the seven weeks carry a discussion. It is stage 2 of the
+[peer-engagement loop](activities.qmd), and it is where the week's concept gets stated in your own
+words and then tested against how your teammates read it. **Week 5 has no discussion**: it is the
+project midpoint, so the loop runs tool-only and the writing energy goes to the project.
+
+You stay in the **same project team** for the whole term. The people who respond to your Week 2
+post are the people you build [the course project](assessment.qmd) with, so the discussion is
+also how your team learns to give each other useful technical feedback before the stakes get high.
+
+---
+
+## What completion requires
+
+Four stages. All four are required for credit.
+
+1. Work through the module's [interactive tool](activities.qmd) and pass its built-in mastery
+   check. Module 3 has no tool, so the written post stands in for it.
+2. Post your own answer to the week's prompt in your team's D2L discussion.
+3. Respond to **every member of your project team**, one response each.
+4. Reply to the responses left on your own post, either revising your claim or defending it.
+
+Missing any stage is a **Not-Yet** for that week. Because stages 3 and 4 depend on your teammates
+having posted first, the stages are time-bound within the week and cannot be made up after the loop
+closes.
+
+**Timing.** Initial post by **midweek**; peer responses and replies by **the end of the
+week**. The exact days for each offering are posted on D2L.
+
+---
+
+## The quality bar
+
+Length is a floor for substance, not the target. A short post that makes a real claim beats a long
+one that does not.
+
+| Component | Length | What it must contain |
+|---|---|---|
+| **Your post** | 150 to 250 words | **Claim:** answers the prompt directly with a position, not a summary. **Evidence:** at least one concrete result from your own work that week (a number, a figure, an output from the tool, the homework unit, or a project milestone). **Reasoning:** states how that evidence supports the claim. **Limits:** names one condition under which your claim would fail, or one thing you could not determine. |
+| **Response to each teammate** | 75 to 125 words each | Quotes or paraphrases a **specific claim** in your teammate's post, then does at least one of: **extends** it with evidence or a case they did not consider; **challenges** it with a stated reason and an alternative; **connects** it to another module, to a differing result of your own, or to a project milestone. |
+| **Reply on your own post** | 50 to 100 words per thread | Engages what was actually raised. Either revise your claim and say what changed it, or defend it with reasoning that addresses the objection. |
+
+### What does not pass
+
+- Restating the prompt, or summarizing the reading without taking a position.
+- A post with no evidence from your own work that week.
+- A post that names no limit.
+- Agreement without addition. "I agree, good point" is not a response.
+- A response that restates your teammate's claim back to them.
+- Responding to fewer than all of your teammates.
+
+---
+
+## The discussions
+
+### Discussion 1 · Week 1 · M1 Foundations {#d1}
+
+**Introductions and what you want to be able to do**
+
+> This week only, the evidence requirement is waived: the course has not produced any of your own
+> results yet. Every other requirement applies.
+
+**Prompt.** Introduce yourself to your project team: your background, what brought you to this
+course, and what you currently use Python for. Then commit to something specific. Of the four
+problem types this course covers (regression, classification, clustering, and dimensionality
+reduction), name the one you expect to find hardest and say why. Close with one thing you want to
+be able to do by Week 7 that you cannot do now.
+
+**A strong post.** Give a reason rooted in your own experience rather than a general statement that
+a topic is difficult, and state a Week 7 goal specific enough that you could tell in Week 7 whether
+you hit it.
+
+### Discussion 2 · Week 2 · M2 Bias-Variance and Regularization {#d2}
+
+**The tradeoff in your own words**
+
+**Prompt.** Describe the bias-variance tradeoff without using the words "bias" or "variance."
+Ground it in your own runs of the [Week 2 explorer](activities.qmd): report the polynomial order
+and the ridge penalty you settled on, and say what told you to stop there. Then the harder
+question. On this NHANES cohort the gain from higher polynomial order is small, and the dramatic
+underfit and overfit contrast you see in textbooks is partly an artifact of synthetic data. Does
+that make the tradeoff less important to understand, or more? Take a position.
+
+**A strong post.** The two-word constraint is there to force you to explain the mechanism rather
+than name it. Expect your team to split on the second question. That disagreement is the point, so
+respond to it rather than around it.
+
+### Discussion 3 · Week 3 · M3 Probability, Likelihood and MLE {#d3}
+
+**What likelihood buys us**
+
+> Module 3 has no interactive tool, so this post carries the module's peer-engagement loop on its
+> own. It is held to a higher standard than the others.
+
+**Prompt.** Under Gaussian noise, maximum likelihood recovers exactly the least-squares solution
+you already had in Week 1. So what did you gain? Name something specific that the likelihood
+formulation gives you which least squares alone cannot, and show it with a result from your own
+Unit 3 or milestone 1.2 work. Then state one claim you can now make about your Part 1 fit that you
+could not have made after 1.1.
+
+**A strong post.** Resist the answer "it is more principled." Point at a quantity that did not
+exist before you wrote down a likelihood, and show its value from your own run.
+
+### Discussion 4 · Week 4 · M4 Bayesian Inference {#d4}
+
+**How the posterior contracts**
+
+**Prompt.** Using the [Week 4 Bayesian updating explorer](activities.qmd), describe what happened
+to your posterior as you fed it more data. Report the specific point at which your prior stopped
+visibly mattering. Then take a position: does the fact that the prior washes out make the choice of
+prior less important, or more important? Defend it. If you think the answer depends on something,
+name what it depends on.
+
+**A strong post.** Use a number from the explorer rather than a description of the shape. The rate
+at which the prior washes out is itself the interesting quantity, and a strong post treats it that
+way.
+
+### Week 5 · M5 Approximate Inference and Classification: no discussion {#d5}
+
+This week is the project midpoint (Part 1 is due), so there is no graded discussion. Run the
+[Week 5 logistic-regression tool](activities.qmd) as lecture support; the comparison you would
+have written here (what Laplace and Metropolis each buy you and cost you on the same posterior)
+is exactly the analysis milestone 2.1 asks for, so nothing is lost, it just lives in the project.
+
+### Discussion 6 · Week 6 · M6 SVM and Clustering {#d6}
+
+**When clusters do and do not match labels**
+
+**Prompt.** k-means on the six non-blood-pressure features recovers the hypertension strata only
+modestly. Report your own between-cluster relative risk. Then argue: is a modest enrichment a
+failure of the clustering, a failure of the features, or the correct answer to the question you
+actually asked? Second, the blood pressure columns were deliberately held out of the clustering.
+Say what would have happened to your relative risk if they had not been, and explain why that
+larger number would have been worse rather than better.
+
+**A strong post.** Distinguish "the algorithm did not work" from "there is no strong geometric
+structure here to find." The second question is about leakage, not about performance, and a strong
+post says so plainly.
+
+### Discussion 7 · Week 7 · M7 Dimensionality Reduction {#d7}
+
+**The course arc: loss, likelihood, posterior, approximation, discovery**
+
+**Prompt.** From your PCA biplot, name what PC1 appears to encode on this cohort and which feature
+loadings told you that. Then trace the arc this course followed: loss, then likelihood, then
+posterior, then approximation, then discovery. Name the one step in that sequence where your
+understanding of the problem changed most, and say exactly what changed it. Close with something
+that **every** lens missed, and say whether more data or a different method would have caught it.
+
+**A strong post.** The closing question is the real one. One specific thing all five steps missed,
+with a reason, beats a summary of what each step does.
+
+---
+
+## Grading
+
+Each week's loop is **Pass** or **Not-Yet**, consistent with the rest of the course. There are no
+partial points. A loop passes when all four stages are complete and both your post and your
+responses meet the quality bar above. Six loops carry a discussion; in Week 5 the loop is the
+tool and its mastery check alone.
+
+Because the stages are time-bound and depend on teammates, loops are not revisable after the week
+closes. The category is weighted to absorb an occasional miss rather than to punish one.
+
+Peer-engagement loops and discussions are worth **10%** of the course grade. See
+[Assessment](assessment.qmd) for how the components combine.

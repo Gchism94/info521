@@ -26,6 +26,10 @@ Two halves, each combining code and a short derivation:
   you also derive (D1).
 - **(B) Estimating $\pi$** — recover $\pi$ from the accepted-sample fraction in the unit circle
   (2-D), sphere (3-D), and $n$-ball, and derive the three estimator formulas (D2).
+- **(C) MLE for the linear model** *(merged from Checkpoint 1.2)* — implement `w_mle` and
+  `sigma2_mle` for the Gaussian-noise linear model and confirm against the shipped fixture
+  that the MLE weights equal the OLS weights to tolerance. Two short functions; the
+  derivation they verify is the Week 3 checkpoint quiz.
 
 Then answer two interpretation questions about convergence and the curse. **Any correct sampler
 passes** — the autograder checks convergence and distributional properties, never specific
@@ -67,8 +71,8 @@ in [`GRADING.md`]({{< var grading_url >}}).
 
 ## Deadline & revision window
 
-- Due: **[PLACEHOLDER]**
-- Post-feedback revision window: **[PLACEHOLDER]**
+- Due: **Week 3** (week pacing; this term runs 7 weeks with no fixed calendar dates)
+- Post-feedback revision window: **the following week**
 
 ## Estimated effort
 

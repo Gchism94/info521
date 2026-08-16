@@ -1,20 +1,47 @@
 ---
 title: "Homeworks"
 page-layout: full
+format:
+  html: default
+  typst:
+    papersize: us-letter
+    margin:
+      x: 1in
+      y: 1in
+    fontsize: 10.5pt
+    toc: true
+    toc-depth: 3
+    include-in-header:
+      - text: |
+          #set text(font: ("Helvetica Neue", "Helvetica", "Arial"))
+          #show heading.where(level: 1): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 2): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 3): set text(fill: rgb("#205a80"))
+          #show link: set text(fill: rgb("#AB0520"))
+  docx:
+    reference-doc: reference.docx
+    toc: true
+    toc-depth: 3
+format-links: [typst, docx]
 ---
+
+::: {.content-visible when-format="html"}
+[Download this page as a PDF](homeworks.pdf)
+:::
 
 ## Specifications-Graded Units
 
-The homework sequence is **8 deliverables** — seven units plus an open **Capstone** —
+The homework sequence is **7 deliverables** — Unit 0 plus six core units, of which your
+**best five count** (one drop built in; Unit 0 is always required) —
 consolidated into connected arcs rather than isolated weekly problem sets. Every deliverable
 is graded **pass / not-yet** against published specifications: no points, no partial credit,
 revise-and-resubmit.
 
 Each unit page below gives its objectives, what you'll build, prerequisites, what to submit,
 and its **rubric** (the same pages are posted in **D2L**). Assignment materials — starter
-code, autograder, data — are distributed via **GitHub Classroom**; your submissions live in a
+code, autograder, data — are distributed via **Classroom 50**; your submissions live in a
 private repo visible only to you and the instructor. See [Assessment](assessment.qmd) for how
-the units and Capstone set your letter grade.
+the core units set your letter grade: A = any 5, B = 4, C = 3, D = 2.
 
 | Unit | Title | You'll build |
 |:----:|-------|--------------|
@@ -25,11 +52,11 @@ the units and Capstone set your letter grade.
 | [U3](homeworks/unit3.html) | Monte Carlo & Estimators | Estimating 𝔼[f(X)] and π by sampling; O(1/√N) convergence and the curse of dimensionality. |
 | [U4](homeworks/unit4.html) | Bayesian Inference, Exact & Conjugate | Predictive-variance error bars, the exact coin-game posterior, Inverse-Gamma conjugacy. |
 | [U5](homeworks/unit5.html) | Approximate Bayesian Inference | One posterior four ways: PGM, MAP (Newton), Laplace, MCMC — and why mode ≠ mean. |
-| [Capstone](homeworks/capstone.html) | Open Bayesian Modelling with Uncertainty | Your model + a valid uncertainty method (BLR / Laplace / MCMC) on a new dataset, with a results-and-ethics report. |
 
 ## How the units connect
 
 The sequence spirals rather than resets: **U0**'s seed policy is graded again in U3 and U5 ·
 **U2b proves** the matrix-calculus identities **U1 applies** · U2b's Beta moments power
 **U4**'s conjugate priors, and its Hessian identity returns in **U5** · U4's exact posteriors
-become the targets **U5 approximates** · the Capstone's method menu *is* U4 + U5.
+become the targets **U5 approximates** · U4 + U5 together are the method menu the
+project's Part 2 draws on.

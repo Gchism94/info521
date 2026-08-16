@@ -1,78 +1,62 @@
-# INFO 521 — Evergreen Course Hub
+# INFO 521: Machine Learning Foundations, the course hub
 
-**Machine Learning Foundations** (7.5-week graduate course)
+The public, evergreen hub site for INFO 521, a 7.5-week graduate course
+(University of Arizona, College of Information Science). This repo renders to the
+course website: schedule, syllabus, assessment model, homework unit pages, project
+pages, discussions, readings.
 
-This repository is the central hub for INFO 521. It surfaces the module-by-module schedule and links out to three spoke repositories:
+It is the center of a five-repo course. The spokes:
 
-- [`info521-slides-2026`](https://github.com/gchism94/info521-slides-2026) — Lecture decks in Quarto + reveal.js
-- [`info521-activities-2026`](https://github.com/gchism94/info521-activities-2026) — Six weekly peer-engagement loops
-- [`info521-homeworks-2026`](https://github.com/gchism94/info521-homeworks-2026) — GitHub Classroom assignment template (private)
+| Repo | Visibility | Carries |
+|---|---|---|
+| `info521-slides-2026` | public | lecture decks, module overview decks, recording scripts, D2L note pages |
+| `info521-activities-2026` | public | six interactive peer-loop tools |
+| `info521-projects-2026` | public | the two-part project: milestone notebooks, data loader, briefs |
+| `info521-homeworks-2026` | **private** | homework source of truth and all instructor material (solutions, quiz banks, keys) |
 
-## Rendering Locally
+**Instructors: start with `INSTRUCTOR_CHECKLIST.md` in the private homeworks repo.**
+It walks the full GitHub organization + Classroom 50 setup. Nothing in this hub repo
+creates repos, pushes, or wires Classroom 50; all remote operations are manual.
 
-**Prerequisites**: Quarto 1.4+ (https://quarto.org/docs/get-started/)
+## What is in this repo
+
+```
+_variables.yml       the single source for spoke URLs; edit this to roll the hub to a new term
+_quarto.yml          site config (navbar, footer, theme, published resources)
+theme.scss           UA branding, light/dark
+index.qmd            landing page
+schedule.qmd         the module-by-module table (the centerpiece)
+syllabus.qmd         full syllabus: outcomes, weights (55/25/10/9/1), policies
+assessment.qmd       how grading works: specifications, bundles, the homework ladder
+homeworks.qmd        the seven homework deliverables, best five count
+homeworks/           per-unit pages, single-sourced from the private homeworks repo's intros/
+projects.qmd         one project, two parts, nine milestones, gates
+activities.qmd       the peer-engagement loop model and tool links
+discussions.qmd      the weekly discussion prompts and quality bar
+slides.qmd           deck index
+readings/            open-licensed PDF excerpts served with the site
+handouts/            instructor handouts (not published as site resources by default)
+reference.docx       Word reference for DOCX renders of site pages
+Course_Map_INFO521.docx/.pdf   the course map document for D2L
+.github/workflows/publish.yml  GitHub Pages deploy (Settings → Pages → Source: GitHub Actions)
+```
+
+The `homeworks/_unit*.qmd` files are folded, byte-identical copies of
+`info521-homeworks-2026/intros/_unit*.qmd`. Edit them there, not here; the two sets
+are kept in lockstep (14 file pairs).
+
+## Rendering
+
+Quarto 1.4+.
 
 ```bash
-# Preview in browser (http://localhost:3000)
-quarto preview
-
-# Render to _site/
-quarto render
-
-# Render without committing to git
-quarto render --to html
+quarto preview        # local preview
+quarto render         # renders to _site/ (gitignored; Pages builds via Actions)
 ```
 
-## Evergreen Rollover
+## Rolling to a new term
 
-This hub is **evergreen** — it has no year in its name and always points to the current term's dated spokes. To roll forward to the next term:
-
-1. Edit [`_variables.yml`](_variables.yml) to update the three spoke URLs (e.g., `info521-slides-2027`, `info521-activities-2027`, etc.)
-2. Commit and push
-3. The hub automatically reflects the new spoke URLs — no code changes needed
-
-All schedule content (readings, topics, module descriptions) is generated from each spoke's structure, so spokes can evolve independently.
-
-## Remote Operations
-
-All remote operations are **manual** (performed by Greg):
-
-- Repository creation and initial setup on GitHub
-- Pushing changes to remote (`git push`)
-- Enabling GitHub Pages and configuring the publish workflow
-- Creating GitHub Classroom assignment and invite links
-
-### Optional: Publishing Workflow
-
-A GitHub Actions workflow (`.github/workflows/publish.yml`) is included but **not active** by default. To enable auto-publish to GitHub Pages:
-
-1. Push the hub to GitHub
-2. Go to **Settings → Pages**
-3. Set **Source** to "GitHub Actions"
-4. The workflow will run on every push and deploy to `https://gchism94.github.io/info521`
-
-Alternatively, publish locally with:
-```bash
-quarto publish gh-pages
-```
-
-## File Structure
-
-```
-_variables.yml              Central spoke URLs (single source of truth)
-_quarto.yml                 Website config (navbar, footer, theme)
-theme.scss                  UA branding (navy, red, light/dark)
-index.qmd                   Landing page with three cards
-schedule.qmd                Module-by-module table (THE centerpiece)
-activities.qmd              Peer-loop model explained + tool links
-slides.qmd                  Deck index + rendering instructions
-assessment.qmd              Grading scheme, projects, checkpoints
-README.md                   This file
-.github/workflows/publish.yml  Optional GitHub Pages deploy workflow
-```
-
-## Team
-
-- **Instructor**: Greg Chism
-- **Email**: gchism94@gmail.com
-- **Institution**: University of Arizona, School of Information
+The hub has no year in its name. To roll forward: point `_variables.yml` at the new
+term's dated spoke repos, update any changed weeks in `schedule.qmd`, push. Course
+content on this site is week-paced (no fixed calendar dates), so most terms need no
+other edit.

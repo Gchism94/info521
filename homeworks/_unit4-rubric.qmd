@@ -17,8 +17,9 @@ PASS rule: **every MUST-MEET met, and ≤ 1 missed among the independent specs.*
 | **B4** posterior mean `(a+y_N)/(a+b+N)` | hw11 | autograder | `test_posterior_mean_is_conjugate` | independent |
 | **B5** marginal likelihood & P(win) are probabilities | hw11 | autograder | `test_marginal_likelihood_and_prob_win...` | independent |
 | **D1** Inverse-Gamma conjugacy `α'=α+D/2, β'=β+½‖t−Xw‖²` | hw12 | human per-step | D1 ≥ Proficient | MUST-MEET |
+| **B6** grid posterior ≈ closed-form `Beta(a+y_N, b+N−y_N)` on a grid of r *(new: merged from Checkpoint 1.3)* | CP 1.3 | autograder | `test_grid_posterior_matches_closed_form` | independent |
 
-5 MUST-MEET (A1, A2, A3, B3, D1) + 4 independent (B1, B2, B4, B5); threshold ≤ 1.
+5 MUST-MEET (A1, A2, A3, B3, D1) + 5 independent (B1, B2, B4, B5, B6); threshold ≤ 1.
 
 ### Bundle 2 — Interpretation (CERL)
 

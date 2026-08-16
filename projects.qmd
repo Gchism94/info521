@@ -1,0 +1,145 @@
+---
+title: "Projects"
+page-layout: full
+format:
+  html: default
+  typst:
+    papersize: us-letter
+    margin:
+      x: 1in
+      y: 1in
+    fontsize: 10.5pt
+    toc: true
+    toc-depth: 3
+    include-in-header:
+      - text: |
+          #set text(font: ("Helvetica Neue", "Helvetica", "Arial"))
+          #show heading.where(level: 1): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 2): set text(fill: rgb("#1B4F72"))
+          #show heading.where(level: 3): set text(fill: rgb("#205a80"))
+          #show link: set text(fill: rgb("#AB0520"))
+  docx:
+    reference-doc: reference.docx
+    toc: true
+    toc-depth: 3
+format-links: [typst, docx]
+---
+
+::: {.content-visible when-format="html"}
+[Download this page as a PDF](projects.pdf)
+:::
+
+**One project carries the summative weight of this course**, and it replaces the former
+midterms and final. It runs in two parts on one clinical dataset. Part 1, *One Problem,
+Three Lenses* (milestones 1.1 to 1.4), is due **Week 5, the project midpoint**. Part 2,
+*From Inference to Discovery* (milestones 2.1 to 2.5), closes it out, due **Week 7.5**.
+
+This one project is the whole Projects component. See [Assessment](assessment.qmd) for how
+the components combine.
+
+## One cohort, all term
+
+**One clinical dataset carries the whole semester.** A single continuous prediction
+problem is examined through progressively richer lenses, then extended from prediction
+into discovery.
+
+The data is a curated **NHANES 2021-2022** extract: 5,102 adults, six leakage-safe
+non-blood-pressure features (`age`, `bmi`, `waist`, `chol`, `hdl`, `hba1c`). Part 1
+predicts systolic blood pressure from age. Part 2 binarizes blood pressure into a
+hypertension label under the ACC/AHA rule (SBP ≥ 130 or DBP ≥ 80, prevalence 38.8%) and
+predicts it from those same six features, with the blood-pressure columns held out so the
+label cannot leak into its own predictors.
+
+## Part 1: One Problem, Three Lenses
+
+*Assigned Week 1, due Week 5 (the project midpoint). Modules 1 to 4.*
+
+Same dataset, same single predictor (age → risk), three accreting lenses, then a synthesis.
+
+| Milestone | Lens | Due | Gated by |
+|---|---|---|---|
+| 1.1 | Least squares (design matrix, cross-validation, L2) | Week 3 | [Checkpoint quiz 1.1](#checkpoints) (Wk 2) |
+| 1.2 | Maximum likelihood (Gaussian noise, predictive variance) | Week 4 | [Checkpoint quiz 1.2](#checkpoints) (Wk 3) |
+| 1.3 | Bayesian (conjugate posterior, credible intervals) | Week 5 | [Checkpoint quiz 1.3](#checkpoints) (Wk 4) |
+| 1.4 | Synthesis: all three lenses side by side | Week 5 | structured peer review |
+
+Part 1 stays single-predictor polynomial the whole way, so model order is the only
+complexity knob. It closes on a **closed-form conjugate Gaussian posterior**, which is
+exactly what Part 2 takes away.
+
+## Part 2: From Inference to Discovery
+
+*Begins at the midpoint (Week 5), due Week 7.5. Modules 5 to 7.*
+
+Binarizing the outcome breaks conjugacy. The posterior goes intractable, approximate
+inference becomes necessary, and the feature space expands from one predictor to all six.
+Organized as two thematic gates plus a closing synthesis.
+
+| Milestone | Lens | Due | Gated by |
+|---|---|---|---|
+| 2.1 | Approximate inference (Newton-Raphson, Laplace, Metropolis) | Week 6 | [Checkpoint quiz 2.1](#checkpoints) (Wk 5), Gate A |
+| 2.2 | Classification (soft-margin SVM from scratch) | Week 6 | Gate A, with 2.1 |
+| 2.3 | Clustering (k-means, WCSS, restarts, choosing K) | Week 7 | [Checkpoint quiz 2.3](#checkpoints) (Wk 6), Gate B |
+| 2.4 | Dimensionality reduction (PCA, biplot) | Week 7 | Gate B, with 2.3 |
+| 2.5 | Synthesis: one cohort, a whole semester | Week 7.5 | structured peer review |
+
+**Gate A** (supervised) is satisfied when 2.1 and 2.2 are both Satisfactory and
+Checkpoint quiz 2.1 is passed. **Gate B** (unsupervised) when 2.3 and 2.4 are both
+Satisfactory and Checkpoint quiz 2.3 is passed. The **synthesis** milestone 2.5 is gated by peer
+review, not a checkpoint.
+
+## Checkpoints {#checkpoints}
+
+Each checkpoint is a short open-book **D2L quiz** on the module's derivations. It is named
+for the milestone it gates, and it is always due **the week before** that milestone, so
+the derivation lands before the milestone that uses it.
+
+| Checkpoint quiz | Due | Gates | Topic |
+|---|---|---|---|
+| 1.1 | Week 2 | Milestone 1.1 (Wk 3) | Normal equations |
+| 1.2 | Week 3 | Milestone 1.2 (Wk 4) | MLE for the weights |
+| 1.3 | Week 4 | Milestone 1.3 (Wk 5) | Posterior of a conjugate pair |
+| 2.1 | Week 5 | Milestone 2.1 (Wk 6), Gate A | Newton-Raphson update for the MAP |
+| 2.3 | Week 6 | Milestone 2.3 (Wk 7), Gate B | k-means objective and PCA |
+
+Each quiz is 20 to 30 minutes: mostly auto-graded items that resolve on submission, plus
+two or three short written responses graded Satisfactory / Not-Yet with one revision. All
+five quizzes are required, and each gates the milestone it is named for. The
+numerical verification that used to sit beside these derivations is not gone, it moved
+where the code already lives: Homework Units 1, 3, and 4 pick up the checkpoint 1.1, 1.2,
+and 1.3 verification exercises, and the 2.1 and 2.3 verifications were already required
+inside milestones 2.1, 2.3, and 2.4. Homework certifies that your implementations work;
+the project grades what you do with them on the clinical cohort. Nothing is assessed
+twice.
+
+## Ground rules
+
+- Implement every estimator **from scratch** in NumPy and SciPy. No scikit-learn or other
+  off-the-shelf solvers. From scratch rules out libraries, never your own prior work:
+  code you built and certified in a homework unit may be copied or imported into any
+  milestone, and reusing it is encouraged.
+- The `info521` library is **plumbing only**: data, plotting, self-checks. It contains no
+  fitting routines by design.
+- Every milestone lists its Satisfactory criteria at the top of its own notebook. All
+  criteria must be met. It is all-or-nothing, never partial credit.
+- A **Not-Yet** returns with targeted feedback and one revise cycle.
+
+## Getting your repo
+
+Project materials are distributed as a repository, not as files to download. The join link
+is posted on **D2L** at term start. Your work lives in your own private repo; you clone it,
+work locally, and push.
+
+::: {.callout-note}
+## Setup
+Python 3.11 with numpy 2.1.x. Python 3.14 is not supported (a C-ABI incompatibility with
+numpy). From your repo root:
+
+```bash
+uv venv --python 3.11 .venv
+source .venv/bin/activate
+uv pip install -e .
+```
+
+Quarto must be installed separately (<https://quarto.org>); it is not a Python package.
+:::

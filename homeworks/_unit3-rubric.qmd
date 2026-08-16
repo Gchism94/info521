@@ -17,8 +17,10 @@ PASS rule: **every MUST-MEET met, and ≤ 1 missed among the independent specs.*
 | **B5** n-ball contract + converges; π convergence floor-AND-guard | hw17 | autograder | `test_n_ball...`, `test_pi_convergence_improves_with_n` | MUST-MEET |
 | **D1** analytic `E[f(X)]=18.61` derivation | hw6 | human per-step | D1 ≥ Proficient | MUST-MEET |
 | **D2** 2-D/3-D/n-D π formulas | hw17 | human per-step | D2 ≥ Proficient | MUST-MEET |
+| **C1** `w_mle` == OLS weights on the shipped fixture (rel tol) *(new: merged from Checkpoint 1.2)* | CP 1.2 | autograder | `test_w_mle_equals_ols` | independent |
+| **C2** `sigma2_mle` = mean squared residual at `w_mle` *(new: merged from Checkpoint 1.2)* | CP 1.2 | autograder | `test_sigma2_mle_is_mean_sq_residual` | independent |
 
-5 MUST-MEET (A2, B2, B5, D1, D2) + 4 independent (A1, B1, B3, B4); threshold ≤ 1.
+5 MUST-MEET (A2, B2, B5, D1, D2) + 6 independent (A1, B1, B3, B4, C1, C2); threshold ≤ 1.
 
 ### Bundle 2 — Interpretation (CERL)
 
