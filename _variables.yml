@@ -1,8 +1,11 @@
-github_user:      gchism94
-hub_repo_url:     https://github.com/gchism94/info521
-hub_url:          https://gchism94.github.io/info521
-slides_url:       https://gchism94.github.io/info521-slides-2026
-activities_url:   https://gchism94.github.io/info521-activities-2026
+github_user:        gchism94
+hub_repo_url:       https://github.com/gchism94/info521
+hub_url:            https://gchism94.github.io/info521
+slides_url:         https://gchism94.github.io/info521-slides-2026
+activities_url:     https://gchism94.github.io/info521-activities-2026
+slides_repo_url:    https://github.com/gchism94/info521-slides-2026
+activities_repo_url: https://github.com/gchism94/info521-activities-2026
+projects_repo_url:  https://github.com/gchism94/info521-projects-2026
 # Homework unit pages (README + rubric) live on the hub under homeworks/ (single-sourced
 # from the private info521-homeworks-2026 repo's intros/). grading_url is consumed by those
 # folded pages; they sit one level deep, so it points up to the hub assessment page.

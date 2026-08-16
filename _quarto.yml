@@ -29,9 +29,18 @@ website:
       - href: assessment.qmd
         text: Assessment
     right:
-      - icon: github
-        href: "{{< var hub_repo_url >}}"
-        aria-label: "GitHub"
+      - text: "GitHub"
+        icon: github
+        aria-label: "GitHub repositories"
+        menu:
+          - href: "{{< var hub_repo_url >}}"
+            text: "Hub (this site)"
+          - href: "{{< var slides_repo_url >}}"
+            text: "Slides"
+          - href: "{{< var activities_repo_url >}}"
+            text: "Activities"
+          - href: "{{< var projects_repo_url >}}"
+            text: "Projects"
   page-footer:
     left: |
       © 2026 University of Arizona College of Information Science

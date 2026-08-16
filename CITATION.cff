@@ -1,0 +1,39 @@
+# This CITATION.cff file was generated to make this repository citable.
+# Check https://citation-file-format.github.io/ for guidance, and see
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files
+#
+# Before your first Zenodo release: fill in `version`, `date-released`, and
+# `license` below (no LICENSE file exists in this repo yet; pick one, e.g.
+# CC-BY-4.0 for course content, and add the corresponding LICENSE file).
+# ORCID is optional but recommended if you have one.
+
+cff-version: 1.2.0
+message: "If you use or adapt this course, please cite it as below."
+title: "INFO 521: Machine Learning Foundations — Course Hub"
+abstract: >-
+  The public course hub for INFO 521, Machine Learning Foundations, a
+  7.5-week accelerated online graduate course at the University of Arizona
+  College of Information Science. Renders the course website: syllabus,
+  week-by-week schedule, assessment model, homework unit pages, project
+  pages, discussion prompts, and open-licensed readings. Links four
+  companion repositories: lecture slides, interactive activities, project
+  materials, and homework materials. Homework solutions and quiz keys are
+  held in a private repository and are not included here.
+type: software
+authors:
+  - family-names: "Chism"
+    given-names: "Greg"
+    affiliation: "University of Arizona, College of Information Science"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/gchism94/info521"
+url: "https://gchism94.github.io/info521"
+# version: "2026.1"
+# date-released: "YYYY-MM-DD"
+# license: "CC-BY-4.0"
+keywords:
+  - machine-learning
+  - statistics
+  - graduate-course
+  - open-educational-resources
+  - specifications-grading
+  - bayesian-inference
