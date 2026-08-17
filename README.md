@@ -1,5 +1,10 @@
 # INFO 521: Machine Learning Foundations, the course hub
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21971088.svg)](https://doi.org/10.5281/zenodo.21971088)
+
+If using these course materials, cite the following:
+>Chism, G. (2026). INFO 521: Machine Learning Foundations — Course Hub (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21971088
+
 The public, evergreen hub site for INFO 521, a 7.5-week graduate course
 (University of Arizona, College of Information Science). This repo renders to the
 course website: schedule, syllabus, assessment model, homework unit pages, project
